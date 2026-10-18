@@ -58,7 +58,7 @@ export function FirstVisit() {
             Add your first expense
           </Link>
           <p id="entry-preview-note" className="mt-3 text-sm leading-6 text-muted">
-            Preview: expense entry and saving are not available yet.
+            Preview: entries last only for this visit. Refreshing or closing this page clears them.
           </p>
         </div>
       </Card>

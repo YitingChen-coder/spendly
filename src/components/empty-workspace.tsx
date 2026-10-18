@@ -29,7 +29,7 @@ export function EmptyWorkspace({ eyebrow, title, description, heading, message, 
         <Link href="/expenses/new" className={buttonStyles("primary", "mt-6 w-full sm:w-auto")} aria-describedby="empty-preview-note">
           <Icon name="plus" />Add your first expense
         </Link>
-        <p id="empty-preview-note" className="mt-3 text-sm leading-6 text-muted">Preview: expense entry and saving are not available yet.</p>
+        <p id="empty-preview-note" className="mt-3 text-sm leading-6 text-muted">Preview: entries last only for this visit. Refreshing or closing this page clears them.</p>
       </Card>
       <Link href="/" className={buttonStyles("secondary")}>Back to overview<Icon name="arrow" /></Link>
     </div>

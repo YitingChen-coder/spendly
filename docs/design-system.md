@@ -1,6 +1,6 @@
 # Spendly Design System
 
-Status: Phase 2 foundation. Interface copy is English. No expense data or business behavior is included in this milestone.
+Status: foundation introduced in Phase 2, reused by the Phase 4 form. Interface copy is English.
 
 ## Visual direction
 
@@ -37,18 +37,19 @@ At Tailwind's `lg` breakpoint (1024px), use a 250px left navigation column and a
 | --- | --- |
 | Button | Native button props, primary/secondary variants, disabled semantics, default `type="button"`; callers choose `submit` explicitly |
 | buttonStyles | Reuse button styling for actual Next links; do not nest a button in a link |
-| Input | Native input props, visible boundary/focus, disabled and invalid states; use with a real label |
+| Input | Native input props including React 19 ref, visible boundary/focus, disabled and invalid states; use with a real label |
 | FormField | Required id and label; optional hint/error; connects label and descriptions to Input, marks invalid fields, preserves native defaults and external described-by references |
+| SelectField | Native select with a real label, required/invalid state, and connected adjacent error; matches Input styling |
 | Card | Styled neutral container; supports native div/ARIA attributes; caller supplies semantic headings |
 | Navigation | Four Next links; exact-path matching selects only one active item using `aria-current="page"` |
 | AppShell | Shared brand, responsive navigation, skip link, one main landmark, and footer |
-| PagePlaceholder | Consistent title and a clearly labeled coming-soon card; only functional links, no pretend actions |
+| FirstVisit / EmptyWorkspace | First-use purpose, clear entry links, and truthful temporary-data notes; no fake spending |
 
-Input, FormField, and Button are provided for later forms, not mounted as a nonfunctional expense form in Phase 2. Navigation uses links styled with buttonStyles where appropriate.
+Input, FormField, SelectField, and Button are used by the Phase 4 single-column expense form. Navigation uses links styled with buttonStyles where appropriate. The initial Phase 2 preview did not mount a pretend form.
 
 ## Accessibility foundation and checks
 
-Native links/buttons/inputs preserve browser keyboard semantics. Global focus-visible outlines are 2px with a 4px offset. The skip link points to a focusable main landmark. Decorative icons are hidden from assistive technology. Selected navigation has a background and accessible current-page state. Color transitions respect reduced-motion preferences.
+Native links/buttons/inputs/selects preserve browser keyboard semantics. Global focus-visible outlines are 2px with a 4px offset. The skip link points to a focusable main landmark. Decorative icons are hidden from assistive technology. Selected navigation has a background and accessible current-page state. Color transitions respect reduced-motion preferences.
 
 Calculated token contrast ratios: ink/white 14.91:1, muted/white 6.03:1, muted/canvas 5.61:1, white/brand 7.80:1, brand/brand-soft 6.71:1, danger/white 6.57:1. Input boundary/white is 3.66:1. Decorative line borders are not the sole control boundary.
 

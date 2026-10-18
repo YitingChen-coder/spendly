@@ -4,7 +4,7 @@ A simple personal expense tracker: record everyday purchases quickly and underst
 
 ## Project status
 
-**Phase 3: first-visit presentation and entry links.** The home page explains Spendly and links to the first-expense destination. Expenses and Weekly Summary have actionable preview empty states. The expense-entry page remains a placeholder: recording, localStorage, and calculations are not implemented. Phase 4 requires the user's confirmation. No Vercel deployment or deployed first-run check has been completed.
+**Phase 4: expense form, validation, and temporary feedback.** Add purchases through the four-field form and view them during the current visit. Entries exist only in memory: refresh or close the page and they are cleared. localStorage, edit/delete, durable history, totals, and weekly calculations are not implemented. Phase 5 requires the user's confirmation. No Vercel deployment or deployed first-run check has been completed.
 
 Stack: Next.js App Router, React, TypeScript, Tailwind CSS, and ESLint. Browser localStorage is planned for Phase 5. No accounts, database, backend services, or external runtime APIs.
 
@@ -85,13 +85,13 @@ See [flow details and exceptional states](flows.md) and the [product brief](docs
 | Route | Current experience |
 | --- | --- |
 | `/` | First-visit purpose, primary entry link, brief workflow, and local-data explanation |
-| `/expenses/new` | Honest expense-entry placeholder; form planned for Phase 4 |
-| `/expenses` | Preview empty state with first-expense entry link |
+| `/expenses/new` | Single-column expense form, field validation, and temporary submission |
+| `/expenses` | This visit's temporary purchases and feedback, or an actionable empty state |
 | `/summary` | Preview empty state with first-expense entry link |
 
 The edit route `/expenses/[id]/edit` is planned for Phase 5 and is not available in this preview.
 
-Shared navigation connects Overview, Expenses, Weekly Summary, and Add Expense. The form uses amount (USD), a short description, category, and date; date defaults to today. Weeks run Monday-Sunday using local dates. The shell, navigation, and first-visit presentation are implemented; the expense fields and reporting rules remain future design decisions. The home page does not inspect storage or distinguish returning users yet.
+Shared navigation connects Overview, Expenses, Weekly Summary, and Add Expense. The form uses amount (USD), a short description, category, and date; date defaults to today. Weeks run Monday-Sunday using local dates. The shell, navigation, first-visit presentation, and expense form are implemented. Reporting rules remain planned. The home page does not inspect storage or distinguish returning users yet. New entries appear on Expenses with temporary feedback; no durable-save message or totals are shown.
 
 ## Competitor onboarding research
 
@@ -119,16 +119,17 @@ Each phase has a meaningful checked commit. See [phase plan and exact commit mes
 
 ## Local development
 
-Use Node.js 20.19+, 22.13+, or 24+ and npm. The lockfile records the installed versions.
+Use Node.js 24+ and npm. The lockfile records the installed versions.
 
 ```bash
 npm ci
 npm run dev
 ```
 
-Open http://localhost:3000. The preview has shared navigation, a first-visit home page, and expense-entry links. It does not record or save expenses.
+Open http://localhost:3000. The preview supports adding expenses for the current visit only. Navigate within the app to retain temporary entries. Refreshing or closing the page clears them.
 
 ```bash
+npm test
 npm run typecheck
 npm run lint
 npm run build
@@ -137,13 +138,15 @@ npm run start
 
 The typecheck command generates Next.js route types before running TypeScript, including on a fresh checkout. Scripts use Next.js's supported Webpack bundler because this execution environment blocks Turbopack's internal worker port. The production build does not fetch fonts or call external APIs.
 
+Tests use Node's built-in runner, tsx for TSX, and jsdom for a simulated DOM. These are development-only tools; simulated DOM tests do not replace browser or deployed usability checks.
+
 Read the [design system](docs/design-system.md) for colors, type, spacing, responsive behavior, and component contracts. The phase review records tooling compatibility and dependency-audit limitations.
 
 ## Verification and persistence
 
-See the [verification plan](docs/verification.md) for required refresh and close/reopen checks, missing/empty/invalid/corrupt storage cases, storage failures, form validation, calculations, and accessibility. Expense and persistence tests are pending implementation. Phase 2 checks cover TypeScript, ESLint, a production build, HTTP responses for all four routes, component semantics, and calculated color contrast. See [Phase 2 verification](docs/phase-2-review.md) and [Phase 3 verification](docs/phase-3-review.md) for actual results and limitations. [Phase 1 review](docs/phase-1-review.md) records the earlier documentation audit.
+See the [verification plan](docs/verification.md) for required refresh and close/reopen checks, missing/empty/invalid/corrupt storage cases, storage failures, form validation, calculations, and accessibility. Expense validation and simulated-DOM interaction tests run with `npm test`. Persistence tests remain pending Phase 5. Phase 2 checks cover TypeScript, ESLint, a production build, HTTP responses for all four routes, component semantics, and calculated color contrast. See [Phase 2 verification](docs/phase-2-review.md) [Phase 3 verification](docs/phase-3-review.md), and [Phase 4 verification](docs/phase-4-review.md) for actual results and limitations. [Phase 1 review](docs/phase-1-review.md) records the earlier documentation audit.
 
-Data will remain local to the current browser profile and site origin; it will not sync between devices or between localhost and Vercel. Invalid storage must not be silently overwritten. No sample expenses will be represented as the user's saved data.
+At this milestone, data is temporary in memory and is lost on refresh/close. In Phase 5, saved data will remain local to the current browser profile and site origin; it will not sync between devices or between localhost and Vercel. Invalid storage must not be silently overwritten. No sample expenses will be represented as the user's saved data.
 
 ## Deployed agent first-run check
 
@@ -165,6 +168,8 @@ The agent must actually open the live Vercel site as a new user, add three purch
 - [Phase 2 verification](docs/phase-2-review.md)
 - [Phase 3 first-visit plan](docs/phase-3-plan.md)
 - [Phase 3 verification](docs/phase-3-review.md)
+- [Phase 4 form plan](docs/phase-4-plan.md)
+- [Phase 4 verification](docs/phase-4-review.md)
 - [Detailed flows](flows.md)
 - [Research synthesis](docs/research/README.md)
 - [Seven-phase plan](docs/phase-plan.md)
