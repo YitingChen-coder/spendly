@@ -14,7 +14,7 @@ Converse with the user in Chinese. All code, identifiers, comments, interface co
 
 Follow the seven phases in `docs/phase-plan.md`. Make each phase a meaningful, checked commit; do not generate the entire application at once or split finished work into artificial commits. The existing repository initialization commit is separate from the seven planned assignment commits.
 
-The user currently authorizes **Phase 1 only**. Stop immediately after its verification and commit. Do not scaffold Next.js, install application dependencies, write application code, deploy, or start Phase 2 until the user confirms. Update this authorization statement when the user explicitly authorizes a later phase.
+The user currently authorizes **Phase 2 only**, after approving Phase 1. Initialize the application foundation, shared UI, and four placeholder routes in this existing repository. Do not implement onboarding, expense business logic, localStorage, or spending statistics. Stop immediately after Phase 2 verification and its commit; Phase 3 requires the user's confirmation. Phase 1 may be pushed to the existing GitHub remote as explicitly requested; Phase 2 publishing is not yet requested. Update this authorization statement when the user explicitly authorizes a later phase.
 
 Phase 1 must use three actual independent subagents, one per competitor. Save sourced findings and distinguish official documentation from hands-on observations. Never claim an unperformed test or an unmeasured duration.
 

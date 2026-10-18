@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #f6f7f4;
+  --color-surface: #ffffff;
+  --color-ink: #172b25;
+  --color-muted: #58665f;
+  --color-line: #dce3dc;
+  --color-control: #7b8980;
+  --color-brand: #245c45;
+  --color-brand-hover: #194632;
+  --color-brand-soft: #e8f0e9;
+  --color-danger: #b42318;
+  --font-sans: Arial, Helvetica, sans-serif;
+  --radius-card: 1.25rem;
+  --radius-control: 0.75rem;
+  --shadow-card: 0 2px 8px rgb(23 43 37 / 0.025);
+}
+
+@layer base {
+  body {
+    @apply bg-canvas font-sans text-ink antialiased;
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+
+  a,
+  button,
+  input,
+  [tabindex] {
+    @apply focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand;
+  }
+
+  ::selection {
+    @apply bg-brand-soft text-ink;
+  }
+}
