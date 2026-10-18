@@ -1,8 +1,17 @@
 import type { Metadata } from "next";
-import { PagePlaceholder } from "@/components/page-placeholder";
+import { EmptyWorkspace } from "@/components/empty-workspace";
 
 export const metadata: Metadata = { title: "Weekly Summary" };
 
 export default function SummaryPage() {
-  return <PagePlaceholder eyebrow="Weekly Summary" title="Make room for perspective." description="A weekly view to help you understand the purchases behind your spending." cardTitle="Your week, with a little more clarity." cardDescription="Weekly totals and a category breakdown are coming soon. This preview does not calculate spending or display sample financial data." icon="summary" />;
+  return (
+    <EmptyWorkspace
+      eyebrow="Weekly Summary"
+      title="See what adds up."
+      description="The bigger picture starts with the small things you record."
+      heading="A clearer week starts with an expense."
+      message="Record everyday purchases to build a weekly view of spending by category. This breakdown will be available once recording and saving are ready."
+      icon="summary"
+    />
+  );
 }

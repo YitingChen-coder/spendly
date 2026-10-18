@@ -1,6 +1,6 @@
 # Spendly Product Brief
 
-Status: Phase 1 product design baseline. Phase 2 implements only the shared shell, UI primitives, and four placeholder routes; the expense features below remain planned.
+Status: Phase 1 product design baseline. Phase 2 provides the shared foundation; Phase 3 adds first-visit presentation and entry links. Expense recording, durable storage, and reporting below remain planned.
 Date: October 18, 2026.
 
 ## Positioning
@@ -17,7 +17,7 @@ Daily motivation: capture a purchase while it is fresh. Weekly motivation: ident
 
 Record an expense -> immediately see the record and updated total -> return a few days later -> review history and this week's spending distribution.
 
-The user confirmed Next.js, Tailwind CSS, localStorage, three independent competitor-research subagents, meaningful phased commits, persistence edge-case testing, and an actual deployed agent usability check. Phase 1 was approved; Phase 2 is authorized for the application foundation only. Phase 3 requires a new confirmation.
+The user confirmed Next.js, Tailwind CSS, localStorage, three independent competitor-research subagents, meaningful phased commits, persistence edge-case testing, and an actual deployed agent usability check. Phases 1 and 2 were approved. Phase 3 is authorized for first-visit presentation and entry links only. Phase 4 requires a new confirmation.
 
 ## Minimum feature scope
 

@@ -1,8 +1,17 @@
 import type { Metadata } from "next";
-import { PagePlaceholder } from "@/components/page-placeholder";
+import { EmptyWorkspace } from "@/components/empty-workspace";
 
 export const metadata: Metadata = { title: "Expenses" };
 
 export default function ExpensesPage() {
-  return <PagePlaceholder eyebrow="Expenses" title="The details, all together." description="A dedicated space for the everyday purchases that make up your bigger picture." cardTitle="Your expense history belongs here." cardDescription="A clear list of your recorded purchases is coming soon. There are no expense records in this preview." icon="expenses" />;
+  return (
+    <EmptyWorkspace
+      eyebrow="Expenses"
+      title="The details, all together."
+      description="A place for your everyday purchases, ready when you are."
+      heading="Your spending story starts with one purchase."
+      message="There are no recorded expenses in this preview. Start with a purchase you want to keep track of, such as lunch or groceries."
+      icon="expenses"
+    />
+  );
 }
