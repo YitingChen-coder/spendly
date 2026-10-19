@@ -86,6 +86,10 @@ Precondition: saved records in the same browser profile and origin. Read and val
 
 Do not treat loading or a storage read failure as a first visit. Malformed JSON, unsupported versions, and invalid records open recovery without overwriting data. Retry the read, download the original raw value if readable, or explicitly confirm a reset. Canceling reset keeps the original value. A reset write failure stays in recovery. Data is saved only in this browser; clearing site data or switching devices does not preserve it.
 
+## Optional quick-start help
+
+A floating Quick guide is available across all routes. On first display it explains expense entry, saved records and weekly review in three steps. Users can skip or close it, navigate Back/Next, follow the expense-entry link, or reopen it from the launcher. Dismissal uses a separate localStorage key and does not alter expense records. It is optional help, so the core diagram does not require completing a tour before entering an expense. Final deployed interaction and keyboard checks for this addition remain pending.
+
 ## Diagram maintenance
 
 Keep the fenced Mermaid block here and in README.md identical. Small validation and navigation details are described in prose to keep the diagram readable.

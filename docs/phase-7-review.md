@@ -42,7 +42,7 @@ At the time of that local attempt, no online user-feedback/fix/retest observatio
 
 ## Current handoff
 
-The later user-supplied remote report below supersedes the earlier local browser blocker as the available test evidence. README now includes its findings and explicitly attributes them. Obtain the screenshot artifacts, retain outstanding manual-test limitations, and complete final verification before the seventh milestone commit. No application changes are required solely to manufacture a usability fix.
+The later user-supplied remote report below supersedes the earlier local browser blocker as the available test evidence. README now includes its findings and explicitly attributes them. Obtain the screenshot artifacts, retain outstanding manual-test limitations, and complete the outstanding browser checks. The seventh milestone has since been pushed as `6a7cc1a`. No application changes are required solely to manufacture a usability fix.
 
 ## October 19, 2026: user-requested first-run retry
 
@@ -82,3 +82,17 @@ The user approved a three-step floating guide: add a purchase, inspect saved rec
 Three new component tests cover navigation/actions, dismissal/remount/replay/Escape/focus and denied storage. The previous remote browser run predates this feature; its results must not be represented as deployed-guide verification. Screenshot synchronization, actual keyboard walkthrough and `/plan` process evidence remain outstanding. The user explicitly requested implementation, commit and push; this approved addition is the final feature milestone, with remaining verification limitations recorded rather than claimed complete.
 
 Final local verification after the guide addition: 131/131 tests passed, TypeScript and zero-warning ESLint passed, and the production build passed. The shared Button now accepts React 19 native button props, including the ref used for focus return.
+
+## Subsequent remote attempt: network blocked
+
+The user supplied a subsequent remote verification report; its execution date and Chromium version were not supplied. The remote session confirmed GitHub main at `6a7cc1a` (`feat: add floating quick-start guide`). The seventh milestone is already pushed.
+
+Actual Chromium production navigation failed because the network proxy returned CONNECT 403 and the browser reported a tunnel-connection failure. The following checks were not completed and are not passed: guide controls and dismissal persistence, keyboard-only walkthrough, expense/persistence flows with the guide installed, and guide overlap/scrolling at 375/768/1280px.
+
+GitHub README was accessible and Mermaid source included First Visit, Main Task and Returning Visit. Blocked GitHub static assets prevented visual rendering confirmation. The earlier successful deployed browser test predates the guide and does not replace this attempt. No application defect was confirmed, and no application code changes were made in response. Restore authorized network access to the production host and required GitHub assets, then resume the pending checks.
+
+## Local browser connection diagnostics, October 19, 2026
+
+Supported diagnostics confirmed Google Chrome 155.0.8059.84 running, the ChatGPT extension installed/enabled in the selected Default profile, and a correct native messaging host manifest. The browser runtime still returned no available browser and an empty discovery list. This is not the remote proxy 403 failure: no local browser session was obtained. The supported recovery step is opening a new Chrome window after the user's confirmation; that confirmation was requested. No extension/native-host installation, personal browsing-data changes or alternative automation workaround was performed.
+
+A final source-based flow review is saved in `final-flow-review.md`; it explicitly does not claim `/plan` execution or browser verification.

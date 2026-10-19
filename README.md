@@ -84,7 +84,7 @@ See [flow details and exceptional states](flows.md) and the [product brief](docs
 
 On the first visit, a floating Quick guide introduces adding an expense, viewing records and reviewing the week. Next/Back, Skip, Close and Done controls keep it optional; the final step links directly to expense entry. The launcher reopens it at any time. Dismissal uses a separate `spendly:quick-guide:v1` localStorage key and never modifies expense records. If storage is unavailable, dismissal lasts for the current page session. The non-modal panel supports Escape, visible focus and focus return when closed from inside; automatic display does not move focus.
 
-Guide interactions, dismissal/remount, replay and denied-storage behavior are covered by component tests. The earlier remote browser report predates this addition and does not validate the new guide in a deployed browser.
+Guide interactions, dismissal/remount, replay and denied-storage behavior are covered by component tests. The earlier remote browser report predates this addition and does not validate the new guide in a deployed browser. A subsequent remote Chromium attempt was blocked by proxy CONNECT 403 before production interactions; guide behavior, keyboard navigation and viewport overlap checks remain unverified. GitHub asset blocking also prevented visual Mermaid confirmation.
 
 ## Available pages
 
@@ -208,6 +208,7 @@ Earlier evidence: [Phase 1](docs/phase-1-review.md), [Phase 2](docs/phase-2-revi
 - [Phase 6 verification](docs/phase-6-review.md)
 - [Phase 7 deployment plan](docs/phase-7-plan.md)
 - [Phase 7 deployment and pending browser check](docs/phase-7-review.md)
+- [Final flow source review and process limitations](docs/final-flow-review.md)
 - [Submission checklist](docs/submission-checklist.md)
 - [Class presentation notes](docs/presentation-notes.md)
 - [Detailed flows](flows.md)
