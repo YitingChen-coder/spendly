@@ -16,7 +16,7 @@ The production page loaded HTTP 200 with no failed requests in the initial netwo
 
 | Requested check | Actual steps and result | Status |
 | --- | --- | --- |
-| First visit and Quick Guide | Fresh profile showed welcome content and guide. Activated Next using Enter; next heading received focus. Back and Skip worked. Reload retained dismissal; launcher reopened guide; Escape closed it and returned focus. Desktop and 375px first-visit screenshots saved. | Passed for exercised controls; Done/final guide link not separately exercised in this run |
+| First visit and Quick Guide | Fresh profile showed welcome content and guide. Activated Next using Enter; next heading received focus. Back and Skip worked. Reload retained dismissal; launcher reopened guide; Escape closed it and returned focus. Desktop and 375px first-visit screenshots saved. | Passed; Done/final guide link verified in the follow-up below |
 | Add, edit and delete | Submitted $12.50 lunch, $20.00 groceries and $7.50 bus. Records appeared. Edited lunch to $15.00. Canceled bus deletion and verified exact data/focus preservation, then confirmed deletion and verified its absence. | Passed |
 | Validation and input retention | Empty submission focused Amount. Entered description Retained draft and amount -3, submitted again, and asserted both exact values remained. Saved validation screenshot. | Passed for these invalid submissions |
 | Weekly total and categories | Stored cents totaled 4000; summary showed $40.00 and 31.3%, 50%, 18.8% for Food & Drink/Groceries/Transport. Edit changed total to 4250 cents; deletion changed it to 3500 cents. Returning overview displayed $35.00. | Passed |
@@ -42,4 +42,25 @@ One keyboard automation attempt stopped because a selector matched both Add Expe
 - [After edit/delete](after-edit-delete.png), [return after browser restart](return-after-browser-restart.png), [keyboard focus](keyboard-submit-focus.png), [keyboard save](keyboard-saved.png), [recovery](corrupt-data-recovery.png).
 - [GitHub README with blocked assets](github-readme-assets-blocked.png).
 
-Remaining: verify Mermaid visually once authorized GitHub static/renderer assets are accessible. Screen-reader testing, Safari/Firefox, complete keyboard coverage, all guide exit controls and every mobile page/state remain outside the verified scope. Existing local Chromium screenshots/tests remain separate evidence in ../cloud-2026-10-19/. Do not mark Mermaid as passed or the entire requested matrix as complete while that item remains blocked.
+Remaining: verify Mermaid visually once authorized GitHub static/renderer assets are accessible. Screen-reader testing, Safari/Firefox, complete keyboard coverage, every mobile page/state remain outside the verified scope. Existing local Chromium screenshots/tests remain separate evidence in ../cloud-2026-10-19/. Do not mark Mermaid as passed or the entire requested matrix as complete while that item remains blocked.
+
+## Follow-up: final guide controls and GitHub Mermaid
+
+Executed **October 19, 2026, 13:58 America/Chicago** in actual Playwright-controlled **Chromium 154.0.8037.57**, 1280×900 viewport, fresh isolated browser context. The existing environment CA was used with TLS verification enabled; final certificate inspection retained only the four pre-existing OpenAI nicknames. No deployment, application change or personal browser access occurred.
+
+### Quick Guide — passed
+
+1. Opened the production site and created one actual $8.75 Food & Drink purchase named Guide acceptance existing purchase through the form. Captured the exact raw spendly:data value as the baseline.
+2. Opened Quick guide and clicked Next twice. Verified the third-step heading Review your week. [Third-step screenshot](final-two-checks/guide-third-step.png).
+3. Clicked Done. Asserted the guide closed. Refreshed, asserted it remained closed and the launcher was available. Compared the entire raw expense value with the baseline: unchanged. [Closed after refresh](final-two-checks/done-after-refresh.png).
+4. Clicked the launcher and Next twice again, proving reopening and navigation still worked. [Reopened third step](final-two-checks/guide-reopened-third-step.png).
+5. Clicked Add an expense. Asserted the actual URL was https://spendly-nu-liard.vercel.app/expenses/new and the guide was closed. Entered 2.50, Unsaved form usability check and Groceries; fields accepted input. Did not submit this draft, so no extra purchase was created. [Working form after guide link](final-two-checks/guide-link-working-form.png).
+6. Compared the complete raw expense value after each guide sequence, refresh and form navigation: every comparison matched. Existing expense data was not changed by the guide. No uncaught page errors were recorded.
+
+### GitHub Mermaid — still unverified
+
+Opened https://github.com/YitingChen-coder/spendly in the actual browser: repository HTML returned HTTP 200. Scrolled to the Mermaid block. The screenshot visibly shows Mermaid source and a loading indicator, not a diagram. The document contained the text First Visit, Main Task and Returning Visit, but zero rendered Mermaid SVGs and no renderer frame. These observations do not satisfy the rendering requirement.
+
+156 resource requests failed with ERR_TUNNEL_CONNECTION_FAILED, affecting github.githubassets.com and avatars.githubusercontent.com. Stopped after this attempt; did not repeatedly request the same blocked assets. No Mermaid syntax error or product defect was established because required rendering resources did not load. [Actual source/loading screenshot](final-two-checks/github-mermaid-current.png). [Structured browser results and failed requests](final-two-checks/results.json).
+
+The only outstanding item from these two follow-up checks is visual Mermaid confirmation in a browser able to load GitHub's required resources. No application behavior was modified. Earlier local and online evidence remains preserved.

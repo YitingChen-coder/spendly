@@ -7,30 +7,27 @@
 
 ## Verified work
 
-- Product definition, target user, minimal scope and daily/weekly motivation.
-- Three actual independent subagents researched Spendee, Wallet and Goodbudget; sources, confidence limits and adopted decisions are documented.
-- README embeds the unchanged Mermaid user-flow diagram; GitHub recognizes its rendering block. Final visual rendering remains unverified.
-- Next.js App Router, TypeScript, Tailwind CSS and ESLint; shared navigation/components and five route patterns including editing.
-- First-visit entry, single-column labeled form, adjacent actionable errors and retained input.
-- Versioned localStorage, schema validation, history, edit/delete, corrupt-data recovery and explicit reset.
-- Returning view, weekly category totals/percentages/counts, honest ties and empty weeks.
-- Automated tests, DOM focus/label/reference checks and calculated text/control contrast; all seven milestone commits pushed; the latest is `6a7cc1a` (`feat: add floating quick-start guide`).
-- Vercel Hobby production deployment; anonymous route and asset HTTP checks.
+- Product scope, individual user needs, daily expense entry and weekly return motivation documented.
+- Three independent competitor studies with sources and evidence limits recorded.
+- First Visit, Main Task and Returning Visit defined in README Mermaid source; visual GitHub rendering remains unverified.
+- Next.js/TypeScript/Tailwind application includes first visit, labeled validated form, history, editing/deletion, weekly totals/category shares and returning views.
+- Versioned browser localStorage validates stored data, preserves corrupt data and handles write failures with retained input.
+- All seven existing milestone commits are pushed. Subsequent documentation commits preserve real verification evidence without rewriting phase history.
+- 131 automated tests, typecheck, zero-warning ESLint and production build passed in the current cloud environment; local evidence is retained separately.
+- Existing Vercel Hobby deployment verified in actual independent production Chromium; no redeployment or VERCEL_TOKEN is required.
+- Online add/edit/delete, validation/input retention, exact totals/category shares, refresh, tab reopen and full browser restart passed.
+- Keyboard-only expense entry and selected responsive checks passed; screenshots retained in [the online acceptance report](verification/online-2026-10-19/report.md).
+- Quick Guide Next/Back/Skip/replay/Escape checked. Follow-up on October 19, 2026 at 13:58 America/Chicago verified Done, closed state after refresh, reopening, final Add an expense navigation and usable form. Complete existing expense data stayed unchanged at every checkpoint.
 
-## Required before calling the assignment complete
+## Remaining requested browser check
 
-- Preserve the user-supplied remote first-run report and synchronize its three screenshot artifacts. README now contains attributed feedback; no application defect or code fix was reported.
-- Retain the remote report of refresh, tab reopen and full Chromium restart. Comprehensive keyboard/reader and remaining responsive visual checks are still unverified.
-- Seven milestone commits are already pushed. Finalize any additional verification documentation after browser access is restored.
-- Complete actual-browser verification of the deployed floating guide. Deployment and the public launcher were checked, but the later remote interaction attempt was blocked by proxy CONNECT 403.
-- Submit the two links in Google Classroom and prepare the class explanation.
+- **GitHub Mermaid visual rendering: unverified.** Latest actual Chromium visit returned HTTP 200 for repository HTML, but 156 asset requests failed. Only source/loading appeared; zero rendered Mermaid SVGs were found. First Visit/Main Task/Returning Visit appearing in source is not a pass. See [the follow-up evidence](verification/online-2026-10-19/report.md#follow-up-final-guide-controls-and-github-mermaid). Resume only when required GitHub resources can load.
 
-Current limitation: browser outcomes are supplied by another Codex session and have not been independently rerun here; its screenshots are not yet in this checkout. Do not describe the entire assessment as complete while the outstanding browser checks and submission steps remain pending. The assignment deadline is October 20, 2026, at 5:30 PM; the assignment document does not specify its timezone.
+## Other limitations and submission actions
 
-## Latest remote verification attempt
+- Comprehensive screen-reader/keyboard coverage, Safari/Firefox and every mobile page/state remain outside verified scope.
+- Earlier remote screenshots were not recovered; newly captured independent online screenshots now support the tested workflows, so screenshot synchronization is not a prerequisite for those results.
+- Submit the two links in Google Classroom and prepare the class explanation. Submission has not been performed by this agent.
+- The assignment deadline is October 20, 2026 at 5:30 PM; the assignment document does not specify its timezone.
 
-The user supplied a remote Chromium report confirming GitHub main at `6a7cc1a`. Production navigation failed with proxy CONNECT 403 and a browser tunnel-connection error. Guide interactions and dismissal persistence, keyboard-only navigation, core flows with the guide, and overlap/scrolling at three viewport widths were not executed. GitHub README source contained the three required flow sections, but blocked static assets prevented visual Mermaid verification. No application defect was confirmed. Earlier successful browser results predate the guide.
-
-## Latest independent online acceptance
-
-October 19, 2026: this cloud session independently passed production guide/navigation, validation/input retention, add/edit/delete, exact totals/category shares and refresh/tab/browser-restart persistence. Keyboard-only entry and selected mobile layouts also passed. New screenshots and actual results are saved in [the final online report](verification/online-2026-10-19/report.md). Earlier remote screenshot recovery is no longer needed as evidence of these newly executed checks; provenance remains distinct. No redeployment or VERCEL_TOKEN is needed. Remaining requested blocker: visual GitHub Mermaid rendering, because its static assets were denied by the proxy. Manual reader, cross-browser and exhaustive state/viewport coverage remain unverified; Classroom submission is not claimed.
+No application changes or redeployment were made for the final two checks. No blocking application defect or Mermaid syntax error was established. The network-blocked rendering check must remain distinct from a failed application test.
