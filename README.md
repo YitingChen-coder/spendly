@@ -190,6 +190,14 @@ Earlier evidence: [Phase 1](docs/phase-1-review.md), [Phase 2](docs/phase-2-revi
 
 **Limits:** Manual screen-reader use, comprehensive keyboard navigation, all mobile forms and Safari/Firefox remain untested. The deployed commit was not independently identified. Initial environment proxy/certificate failures were resolved before the successful browser run; they were not application defects. See [the detailed run and cleanup record](docs/phase-7-review.md). The remote report states that screenshots were captured at 375, 768 and 1280px and the 375px image was visually inspected; the image files are not available in this local checkout.
 
+## Current cloud verification: October 19, 2026
+
+This cloud session independently ran 131 tests (all passed, none skipped), TypeScript, zero-warning ESLint and the production build on Node.js 24.19.0. Actual Playwright-controlled Chromium 154.0.8037.57 also passed a local production-server walkthrough: guide navigation/dismissal/replay/Escape, invalid-form focus, three purchases totaling $40.00, editing to $42.50, canceled and confirmed deletion to $35.00, and exact saved-data retention after refresh, tab reopen and full browser restart. Corrupt stored JSON remained unchanged in recovery. Summary screenshots at 375/768/1280px are now [saved in this repository](docs/verification/cloud-2026-10-19/); the 375px image was visually inspected and all three widths had no horizontal overflow.
+
+Agent feedback from this actual local run: the first-expense action was discoverable; invalid submission focused Amount; saved purchases immediately appeared in history and weekly totals; guide dismissal survived reload and Escape returned focus to its launcher; canceling deletion restored focus and preserved records. No application defect was found in these exercised tasks, so no product fix or post-fix retest is claimed. An initial automation selector used an exact category label that omitted the required-field marker; correcting the test to target the named select resolved that test-only timeout.
+
+**Phase 7 remains blocked in this instance:** the public production URL returned proxy CONNECT 403 over HTTP and `ERR_TUNNEL_CONNECTION_FAILED` in actual Chromium. Existing Vercel CLI authentication and `VERCEL_TOKEN` are absent. No new deployment or successful online usability test is claimed. Local results do not replace deployed verification. Comprehensive keyboard/screen-reader checks, all-page mobile layouts and Safari/Firefox remain unverified. See [the current cloud evidence and setup workaround](docs/verification/cloud-2026-10-19/report.md). Existing phase commits are already present on GitHub; they were not recreated or split.
+
 ## Submission links
 
 - GitHub: [YitingChen-coder/spendly](https://github.com/YitingChen-coder/spendly)
