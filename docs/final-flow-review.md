@@ -19,4 +19,4 @@ The main diagram represents the core expense flow; the optional help panel is de
 
 Actual keyboard navigation, guide persistence and overlap/scrolling in the final deployed version remain pending. A prior successful remote browser report predates the guide. Current browser diagnostics confirm Chrome running, extension installed/enabled and native host manifest correct, but browser discovery returns no connection. The user has been asked to approve the supported new-window recovery step.
 
-This review must not be represented as retroactive evidence that `/plan` was used in Phase 1. If the assignment requires that exact command, run the client planning command and preserve its actual output separately.
+The user subsequently reviewed the existing agent-assisted flow planning and explicitly accepted it as complete. No additional planning-command task remains in the project checklist. This acceptance does not claim that a specific slash command was executed.

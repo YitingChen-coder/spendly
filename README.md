@@ -12,6 +12,10 @@ Stack: Next.js App Router, React, TypeScript, Tailwind CSS, and ESLint. Data is 
 
 Spendly is for an individual tracking everyday purchases on one device. The daily task is quick manual expense entry. The weekly return value is seeing category totals and understanding where recorded money went. Saved history stays available in the same browser, even when the current week has no entries.
 
+## Flow planning
+
+The user and agent defined Spendly's First Visit, Main Task and Returning Visit before implementation, then delivered the product through seven staged milestones. The plan covers routes, validation, successful saves, storage failures, empty states and weekly return value. See the [detailed user flows](flows.md), [seven-phase delivery plan](docs/phase-plan.md) and [final flow review](docs/final-flow-review.md). The user reviewed and accepted this planning work as complete.
+
 ## Core user flow
 
 I record an expense -> I immediately see the record and updated total -> I come back a few days later -> my history remains and I can review this week's spending by category.

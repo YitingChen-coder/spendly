@@ -79,7 +79,7 @@ Manual screen-reader testing, comprehensive keyboard testing, all mobile screens
 
 The user approved a three-step floating guide: add a purchase, inspect saved records, review the week. It appears on first visit, supports Back/Next, Skip/Close/Done and a direct expense-entry link, and remains available through its launcher. A separate dismissal key preserves expense data. Denied storage falls back to page-session dismissal. Automatic display leaves focus untouched; manual steps focus the title, and Escape/close return focus when appropriate. Footer spacing accommodates the launcher. No dependencies were added.
 
-Three new component tests cover navigation/actions, dismissal/remount/replay/Escape/focus and denied storage. The previous remote browser run predates this feature; its results must not be represented as deployed-guide verification. Screenshot synchronization, actual keyboard walkthrough and `/plan` process evidence remain outstanding. The user explicitly requested implementation, commit and push; this approved addition is the final feature milestone, with remaining verification limitations recorded rather than claimed complete.
+Three new component tests cover navigation/actions, dismissal/remount/replay/Escape/focus and denied storage. The previous remote browser run predates this feature; its results must not be represented as deployed-guide verification. Screenshot synchronization and the actual keyboard walkthrough remain outstanding. The user subsequently accepted the existing flow-planning work as complete. The user explicitly requested implementation, commit and push; this approved addition is the final feature milestone, with remaining verification limitations recorded rather than claimed complete.
 
 Final local verification after the guide addition: 131/131 tests passed, TypeScript and zero-warning ESLint passed, and the production build passed. The shared Button now accepts React 19 native button props, including the ref used for focus return.
 
@@ -96,3 +96,7 @@ GitHub README was accessible and Mermaid source included First Visit, Main Task 
 Supported diagnostics confirmed Google Chrome 155.0.8059.84 running, the ChatGPT extension installed/enabled in the selected Default profile, and a correct native messaging host manifest. The browser runtime still returned no available browser and an empty discovery list. This is not the remote proxy 403 failure: no local browser session was obtained. The supported recovery step is opening a new Chrome window after the user's confirmation; that confirmation was requested. No extension/native-host installation, personal browsing-data changes or alternative automation workaround was performed.
 
 A final source-based flow review is saved in `final-flow-review.md`; it explicitly does not claim `/plan` execution or browser verification.
+
+## User acceptance of flow planning
+
+The user confirmed that the existing agent-assisted planning should be treated as complete. README now summarizes the planning and links to flows.md, the seven-phase plan and the final review. A specific slash-command execution is not claimed, and no additional `/plan` task remains open. Browser verification limitations are unchanged.
