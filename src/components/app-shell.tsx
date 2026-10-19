@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { Icon } from "@/components/icon";
+import { QuickGuide } from "@/components/quick-guide";
 import { Navigation } from "@/components/navigation";
 
 export function AppShell({ children }: { children: ReactNode }) {
@@ -23,8 +24,9 @@ export function AppShell({ children }: { children: ReactNode }) {
         <main id="main-content" tabIndex={-1} className="mx-auto w-full max-w-6xl flex-1 px-5 py-9 sm:px-9 sm:py-12 lg:px-12 lg:py-14">
           {children}
         </main>
-        <footer className="mx-auto w-full max-w-6xl px-5 py-6 text-xs text-muted sm:px-9 lg:px-12">Spendly · Simple by design.</footer>
+        <footer className="mx-auto w-full max-w-6xl px-5 pt-6 pb-28 text-xs text-muted sm:px-9 lg:px-12">Spendly · Simple by design.</footer>
       </div>
+      <QuickGuide />
     </div>
   );
 }

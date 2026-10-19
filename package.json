@@ -11,7 +11,7 @@
     "test": "node --import tsx --test tests/*.test.ts tests/*.test.tsx"
   },
   "engines": {
-    "node": ">=24.0.0"
+    "node": "24.x"
   },
   "dependencies": {
     "next": "^16.4.2",

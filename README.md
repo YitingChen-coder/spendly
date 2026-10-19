@@ -4,7 +4,7 @@ A simple personal expense tracker: record everyday purchases quickly and underst
 
 ## Project status
 
-**Phase 6: weekly spending review and returning experience.** Add, edit and delete saved purchases; review this week's total, categories, percentages and counts; return to recent expenses and older history. Data is stored locally in this browser. Invalid data opens recovery without silent overwrites. Deployment and the live agent first-run check remain Phase 7 and require confirmation. Actual browser lifecycle and visual/accessibility checks remain unverified in this session.
+**Phase 7: deployed, remote agent test report recorded, floating guide added.** Spendly is live on Vercel's free Hobby plan at [spendly-nu-liard.vercel.app](https://spendly-nu-liard.vercel.app). A user-supplied report from a separate Codex session records successful deployed Chromium first-run, recovery and persistence checks. The report is incorporated below with provenance and limitations; screenshot synchronization and the remaining manual checks are still outstanding.
 
 Stack: Next.js App Router, React, TypeScript, Tailwind CSS, and ESLint. Data is saved in browser localStorage. No accounts, database, backend services, or external runtime APIs.
 
@@ -80,6 +80,12 @@ flowchart TD
 
 See [flow details and exceptional states](flows.md) and the [product brief](docs/product.md).
 
+## Floating quick-start guide
+
+On the first visit, a floating Quick guide introduces adding an expense, viewing records and reviewing the week. Next/Back, Skip, Close and Done controls keep it optional; the final step links directly to expense entry. The launcher reopens it at any time. Dismissal uses a separate `spendly:quick-guide:v1` localStorage key and never modifies expense records. If storage is unavailable, dismissal lasts for the current page session. The non-modal panel supports Escape, visible focus and focus return when closed from inside; automatic display does not move focus.
+
+Guide interactions, dismissal/remount, replay and denied-storage behavior are covered by component tests. The earlier remote browser report predates this addition and does not validate the new guide in a deployed browser.
+
 ## Available pages
 
 | Route | Current experience |
@@ -118,7 +124,7 @@ Each phase has a meaningful checked commit. See [phase plan and exact commit mes
 
 ## Local development
 
-Use Node.js 24+ and npm. The lockfile records the installed versions.
+Use Node.js 24.x and npm. The lockfile records the installed versions. The Node major is pinned to match the verified local and Vercel runtime.
 
 ```bash
 npm ci
@@ -143,7 +149,7 @@ Read the [design system](docs/design-system.md) for colors, type, spacing, respo
 
 ## Verification and persistence
 
-See the [verification plan](docs/verification.md), [Phase 5 evidence](docs/phase-5-review.md), and [Phase 6 evidence](docs/phase-6-review.md). `npm test` covers validation, storage schema and failures, real-component DOM behavior, edit/delete/reset, and cross-runtime file-backed Web Storage. Actual browser refresh and close/reopen remain **unverified** because no browser connection was available. Provider remount and Node process tests are not substitutes for that browser check.
+See the [verification plan](docs/verification.md), [Phase 5 evidence](docs/phase-5-review.md), and [Phase 6 evidence](docs/phase-6-review.md). `npm test` covers validation, storage schema and failures, real-component DOM behavior, edit/delete/reset, and cross-runtime file-backed Web Storage. A user-supplied remote Codex report records successful deployed Chromium refresh, tab reopen and full browser restart checks in the same persistent profile; see the first-run report below. The current local session did not independently repeat them. Provider remount and Node process tests remain separate evidence.
 
 Data stays in this browser profile and site origin. It does not sync across devices, and clearing site data removes it. Writes complete before success feedback. Invalid JSON, unsupported versions, invalid records and duplicate ids enter recovery; the raw value is retained. Recovery offers retry, a local raw download, and a separately confirmed reset. Conflicting external changes reject stale writes. Form-specific reload failures preserve typed values.
 
@@ -153,14 +159,37 @@ Earlier evidence: [Phase 1](docs/phase-1-review.md), [Phase 2](docs/phase-2-revi
 
 ## Deployed agent first-run check
 
-**Not yet run: pending Phase 7 implementation and deployment.**
+**Reported as executed on October 19, 2026 against https://spendly-nu-liard.vercel.app.** An agent used Playwright to control actual headless Chromium 154.0.8037.57 with a fresh, isolated persistent profile and the America/Chicago timezone. This was a deployed-site interaction test, separate from the Node/jsdom suite and the user's personal browser session. The test began with no saved expenses.
 
-The agent must actually open the live Vercel site as a new user, add three purchases, correct a form error, verify records and totals, inspect the weekly category distribution, refresh, and separately close/reopen the site to verify returning data. Record the actual URL, test date, browser/profile, findings, changes, and retest results here. No feedback or fixes are claimed yet.
+**Evidence source:** The user supplied this report from a separate remote Codex session. The current local session did not rerun these browser actions or inspect its screenshots. The reported deployment commit was not independently identified.
+
+### Agent usability feedback
+
+| Task and observation | Agent feedback | Action and result |
+| --- | --- | --- |
+| First visit exposed “Add your first expense” without account setup. | The first action was identifiable through its visible name and could be followed immediately. | Kept the existing onboarding; the first-visit action and real form submissions passed. No completion time was measured. |
+| Submitting an empty form showed field errors and focused the amount input. Subsequent completed submissions succeeded. | Validation provides a route to correction instead of leaving the user without a next step. | Kept current validation; error feedback and first-error focus passed. |
+| Three purchases produced a $40.00 total and category amounts, counts and percentages. | Recording an expense leads to visible spending feedback, supporting the product's reason to return. | Verified the exact amounts and shares below; no calculation fix was needed. |
+| Refresh, reopening a tab and restarting Chromium retained the same saved value. | The returning experience worked in the tested profile, consistent with the local-save explanation. | Verified all three lifecycle steps on the deployed origin. No persistence fix was needed. |
+| The weekly summary had no horizontal overflow at 375, 768 and 1280px; its 375px screenshot was inspected. | The narrow summary kept navigation, amounts, category labels and actions readable. | Retained the layout. This does not establish usability of every page or device. |
+| Invalid stored data remained unchanged; a simulated storage-write failure preserved form input and existing records. | Recovery and failure feedback avoid falsely telling the user that data was saved or replacing unreadable records. | Recovery, cancel/reset and write-failure checks passed. No recovery fix was needed. |
+
+### Steps, outcomes and follow-up
+
+1. Opened the live site as a new user, followed the add flow, submitted an invalid form and then completed valid entries.
+2. Added **$12.50 Food & Drink**, **$20.00 Groceries** and **$7.50 Transport**. Expected and actual total: **$40.00**; category shares: **31.3%, 50% and 18.8%**. Stored amounts were integer cents totaling 4000.
+3. Refreshed, closed/reopened a tab, and closed/restarted Chromium with the same profile. The exact saved records remained after each step.
+4. Edited $12.50 to $15.00: total became **$42.50**. Canceled deletion and verified focus returned and data stayed unchanged; then confirmed deletion of the $7.50 entry: total became **$35.00**.
+5. Checked three summary viewport widths, malformed JSON, an unsupported storage version, reset cancellation, confirmed reset and an injected quota/write failure. All selected assertions passed; no uncaught browser page errors were observed.
+
+**Changes after feedback:** Updated this README's stale deployment/test status, added the live submission link and incorporated the supplied test report. Screenshot files have not been synchronized to this local repository. No application defect was found in the exercised tasks, so no application code change or post-fix application retest is claimed. This is an automated agent usability check, not feedback from human study participants.
+
+**Limits:** Manual screen-reader use, comprehensive keyboard navigation, all mobile forms and Safari/Firefox remain untested. The deployed commit was not independently identified. Initial environment proxy/certificate failures were resolved before the successful browser run; they were not application defects. See [the detailed run and cleanup record](docs/phase-7-review.md). The remote report states that screenshots were captured at 375, 768 and 1280px and the 375px image was visually inspected; the image files are not available in this local checkout.
 
 ## Submission links
 
 - GitHub: [YitingChen-coder/spendly](https://github.com/YitingChen-coder/spendly)
-- Vercel: not deployed; live URL will be recorded in Phase 7.
+- Vercel: [Spendly live application](https://spendly-nu-liard.vercel.app)
 
 ## Project documentation
 
@@ -177,6 +206,10 @@ The agent must actually open the live Vercel site as a new user, add three purch
 - [Phase 5 verification](docs/phase-5-review.md)
 - [Phase 6 weekly-review plan](docs/phase-6-plan.md)
 - [Phase 6 verification](docs/phase-6-review.md)
+- [Phase 7 deployment plan](docs/phase-7-plan.md)
+- [Phase 7 deployment and pending browser check](docs/phase-7-review.md)
+- [Submission checklist](docs/submission-checklist.md)
+- [Class presentation notes](docs/presentation-notes.md)
 - [Detailed flows](flows.md)
 - [Research synthesis](docs/research/README.md)
 - [Seven-phase plan](docs/phase-plan.md)
