@@ -4,7 +4,7 @@ A simple personal expense tracker: record everyday purchases quickly and underst
 
 ## Project status
 
-**Phase 7: deployed; independent online Chromium acceptance recorded.** Spendly is live on Vercel's free Hobby plan at [spendly-nu-liard.vercel.app](https://spendly-nu-liard.vercel.app). This cloud session independently verified the public site in Chromium and saved screenshots for the guide, expense flows, keyboard entry, mobile layouts and browser-restart persistence. An earlier user-supplied report is retained with its provenance. GitHub Mermaid visual rendering remains blocked by static-asset access; remaining manual and cross-browser checks are listed below.
+**Phase 7: deployed; independent online Chromium acceptance recorded.** Spendly is live on Vercel's free Hobby plan at [spendly-nu-liard.vercel.app](https://spendly-nu-liard.vercel.app). This cloud session independently verified the public site in Chromium and saved screenshots for the guide, expense flows, keyboard entry, mobile layouts and browser-restart persistence. An earlier user-supplied report is retained with its provenance. GitHub Mermaid visual rendering was subsequently confirmed through a user-supplied screenshot of the rendered repository README; the earlier agent network blocker remains documented. Remaining manual and cross-browser limitations are listed below.
 
 Stack: Next.js App Router, React, TypeScript, Tailwind CSS, and ESLint. Data is saved in browser localStorage. No accounts, database, backend services, or external runtime APIs.
 
@@ -206,6 +206,10 @@ Actual agent feedback: the initial add action was identifiable, error correction
 
 **Remaining unverified:** GitHub README HTML loaded, but proxy-blocked GitHub CSS/JavaScript prevented confirmation of Mermaid's visual rendering. Screen-reader/Safari/Firefox testing and comprehensive keyboard/all-page coverage are not claimed. The [13:58 follow-up](docs/verification/online-2026-10-19/report.md#follow-up-final-guide-controls-and-github-mermaid) also passed Done, closed state after refresh, reopening, the final Add an expense link to `/expenses/new`, usable form input, and exact preservation of existing expense data. See the [actual steps, outcome matrix, limitations and screenshots](docs/verification/online-2026-10-19/report.md), including the [mobile guide](docs/verification/online-2026-10-19/mobile-first-guide.png), [weekly summary](docs/verification/online-2026-10-19/summary-375.png), and [browser-restart return](docs/verification/online-2026-10-19/return-after-browser-restart.png).
 
+
+## User confirmation of GitHub Mermaid rendering
+
+On October 19, 2026, the user supplied a screenshot of the GitHub repository README showing the Core user flow diagram rendered as connected nodes, arrows and labeled regions rather than source code or a loading state. The visible Returning Visit region and the beginning of First Visit match the documented flow. This confirms rendering in the user’s browser; it does not claim the remote agent overcame its asset-access blocker or that every off-screen node was visually inspected. The full three-flow Mermaid source remains embedded above and in flows.md.
 
 ## Submission links
 

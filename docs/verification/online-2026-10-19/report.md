@@ -64,3 +64,7 @@ Opened https://github.com/YitingChen-coder/spendly in the actual browser: reposi
 156 resource requests failed with ERR_TUNNEL_CONNECTION_FAILED, affecting github.githubassets.com and avatars.githubusercontent.com. Stopped after this attempt; did not repeatedly request the same blocked assets. No Mermaid syntax error or product defect was established because required rendering resources did not load. [Actual source/loading screenshot](final-two-checks/github-mermaid-current.png). [Structured browser results and failed requests](final-two-checks/results.json).
 
 The only outstanding item from these two follow-up checks is visual Mermaid confirmation in a browser able to load GitHub's required resources. No application behavior was modified. Earlier local and online evidence remains preserved.
+
+## Subsequent user visual confirmation
+
+On October 19, 2026, the user supplied a screenshot of the GitHub README showing the Core user flow Mermaid rendered as connected nodes/arrows and labeled regions. Returning Visit and the start of First Visit are visible. This confirms rendering in the user's browser and supersedes the outstanding rendering-access item above; it does not change the remote agent's historically blocked result or establish inspection of every off-screen node. The evidence was shared in the project conversation; no screenshot file was added to the repository in this local session.

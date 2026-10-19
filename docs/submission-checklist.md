@@ -9,7 +9,7 @@
 
 - Product scope, individual user needs, daily expense entry and weekly return motivation documented.
 - Three independent competitor studies with sources and evidence limits recorded.
-- First Visit, Main Task and Returning Visit defined in README Mermaid source; visual GitHub rendering remains unverified.
+- First Visit, Main Task and Returning Visit defined in README Mermaid source; visual GitHub rendering was subsequently confirmed by the user-provided README screenshot.
 - Next.js/TypeScript/Tailwind application includes first visit, labeled validated form, history, editing/deletion, weekly totals/category shares and returning views.
 - Versioned browser localStorage validates stored data, preserves corrupt data and handles write failures with retained input.
 - All seven existing milestone commits are pushed. Subsequent documentation commits preserve real verification evidence without rewriting phase history.
@@ -19,9 +19,9 @@
 - Keyboard-only expense entry and selected responsive checks passed; screenshots retained in [the online acceptance report](verification/online-2026-10-19/report.md).
 - Quick Guide Next/Back/Skip/replay/Escape checked. Follow-up on October 19, 2026 at 13:58 America/Chicago verified Done, closed state after refresh, reopening, final Add an expense navigation and usable form. Complete existing expense data stayed unchanged at every checkpoint.
 
-## Remaining requested browser check
+## GitHub Mermaid rendering confirmation
 
-- **GitHub Mermaid visual rendering: unverified.** Latest actual Chromium visit returned HTTP 200 for repository HTML, but 156 asset requests failed. Only source/loading appeared; zero rendered Mermaid SVGs were found. First Visit/Main Task/Returning Visit appearing in source is not a pass. See [the follow-up evidence](verification/online-2026-10-19/report.md#follow-up-final-guide-controls-and-github-mermaid). Resume only when required GitHub resources can load.
+The remote agent's Chromium rendering attempt was blocked by GitHub asset access. Subsequently, on October 19, 2026, the user supplied a screenshot of the actual GitHub README with the diagram visibly rendered. This closes the rendering-access check through user-provided visual evidence, not a new agent browser run. The screenshot shows Returning Visit and the beginning of First Visit; full off-screen diagram inspection is not claimed. Historical network evidence remains in the online report.
 
 ## Other limitations and submission actions
 
