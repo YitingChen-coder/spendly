@@ -1,33 +1,25 @@
 "use client";
 
-import { createContext, useContext, useState, type ReactNode } from "react";
-import type { Expense, ExpenseDraft } from "@/lib/expense";
+import { createContext, useContext, useState, useSyncExternalStore, type ReactNode } from "react";
+import { createExpenseStore, loadingState } from "@/lib/expense-store";
+import { StorageStatus } from "@/components/storage-status";
 
-type ExpenseContextValue = {
-  expenses: Expense[];
-  lastAddedId: string | null;
-  addExpense: (draft: ExpenseDraft) => void;
-};
-
-const ExpenseContext = createContext<ExpenseContextValue | null>(null);
+type Store = ReturnType<typeof createExpenseStore>;
+type Value = { state: ReturnType<Store["getSnapshot"]>; store: Store };
+const ExpenseContext = createContext<Value | null>(null);
 
 export function ExpenseProvider({ children }: { children: ReactNode }) {
-  const [expenses, setExpenses] = useState<Expense[]>([]);
-  const [lastAddedId, setLastAddedId] = useState<string | null>(null);
-
-  function addExpense(draft: ExpenseDraft) {
-    const id = crypto.randomUUID();
-    const now = new Date().toISOString();
-    const expense: Expense = { ...draft, id, createdAt: now, updatedAt: now };
-    setExpenses((current) => [expense, ...current]);
-    setLastAddedId(id);
-  }
-
-  return <ExpenseContext.Provider value={{ expenses, lastAddedId, addExpense }}>{children}</ExpenseContext.Provider>;
+  const [store] = useState(() => createExpenseStore());
+  const state = useSyncExternalStore(store.subscribe, store.getSnapshot, () => loadingState);
+  return (
+    <ExpenseContext.Provider value={{ state, store }}>
+      {state.status === "ready" ? children : <StorageStatus state={state} onRetry={store.reload} onReset={store.reset} />}
+    </ExpenseContext.Provider>
+  );
 }
 
 export function useExpenses() {
   const context = useContext(ExpenseContext);
-  if (!context) throw new Error("useExpenses must be used inside ExpenseProvider.");
-  return context;
+  if (!context || context.state.status !== "ready") throw new Error("Expenses must be used inside the ready ExpenseProvider.");
+  return { expenses: context.state.expenses, notice: context.state.notice, addExpense: context.store.add, updateExpense: context.store.update, deleteExpense: context.store.remove, reload: context.store.reload, reloadForEditing: context.store.reloadForEditing };
 }

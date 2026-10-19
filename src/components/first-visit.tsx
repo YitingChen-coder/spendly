@@ -58,7 +58,7 @@ export function FirstVisit() {
             Add your first expense
           </Link>
           <p id="entry-preview-note" className="mt-3 text-sm leading-6 text-muted">
-            Preview: entries last only for this visit. Refreshing or closing this page clears them.
+            Saved only in this browser. Clearing site data removes your records.
           </p>
         </div>
       </Card>
@@ -90,7 +90,7 @@ export function FirstVisit() {
           Made for your browser, without an account.
         </h2>
         <p className="mt-2 max-w-2xl text-sm leading-6 text-muted">
-          When saving is available, your records will stay in this browser on
+          Your records stay in this browser on
           this device. They will not sync across devices, and clearing site data
           will remove them.
         </p>

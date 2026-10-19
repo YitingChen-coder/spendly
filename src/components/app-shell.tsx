@@ -18,7 +18,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       <div className="flex min-w-0 flex-col">
         <div className="flex min-h-20 items-center justify-between gap-3 border-b border-line px-5 sm:px-9 lg:px-12">
           <span className="text-sm font-medium text-muted">Your personal spending space</span>
-          <span className="shrink-0 rounded-full border border-line bg-surface px-3 py-1 text-xs font-medium text-muted">Preview</span>
+          <span className="shrink-0 rounded-full border border-line bg-surface px-3 py-1 text-xs font-medium text-muted">Local only</span>
         </div>
         <main id="main-content" tabIndex={-1} className="mx-auto w-full max-w-6xl flex-1 px-5 py-9 sm:px-9 sm:py-12 lg:px-12 lg:py-14">
           {children}

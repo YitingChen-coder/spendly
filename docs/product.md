@@ -1,6 +1,6 @@
 # Spendly Product Brief
 
-Status: Phase 1 product design baseline. Phase 2 provides the shared foundation; Phase 3 adds first-visit presentation and entry links. Phase 4 adds form validation and temporary in-memory entries. Durable storage and reporting below remain planned.
+Status: Phase 1 product design baseline. Phase 2 provides the shared foundation; Phase 3 adds first-visit presentation and entry links. Phase 4 adds form validation and temporary in-memory entries. Phase 5 adds durable localStorage, management, and immediate weekly totals. Category analysis remains planned.
 Date: October 18, 2026.
 
 ## Positioning
@@ -17,7 +17,7 @@ Daily motivation: capture a purchase while it is fresh. Weekly motivation: ident
 
 Record an expense -> immediately see the record and updated total -> return a few days later -> review history and this week's spending distribution.
 
-The user confirmed Next.js, Tailwind CSS, localStorage, three independent competitor-research subagents, meaningful phased commits, persistence edge-case testing, and an actual deployed agent usability check. Phases 1-3 were approved. Phase 4 is authorized for the form and temporary submission feedback. The user authorizes pushing completed milestone commits; Phase 5 implementation still requires confirmation.
+The user confirmed Next.js, Tailwind CSS, localStorage, three independent competitor-research subagents, meaningful phased commits, persistence edge-case testing, and an actual deployed agent usability check. Phases 1-4 were approved. Phase 5 is authorized for local persistence and expense management, and the user subsequently authorized Phase 6 as the next separate milestone. Completed milestone commits may be pushed to GitHub.
 
 ## Minimum feature scope
 
@@ -62,7 +62,7 @@ These are explicit Phase 1 design decisions, open to user revision before implem
 - Dates: save expense dates as local `YYYY-MM-DD` strings, avoiding UTC date shifts. Save creation/update timestamps separately.
 - Amounts: integer cents; calculations use cents and format to two decimals.
 - Category percentage: category cents divided by total cents; with zero total, show no percentages and invite an entry. Rounding may make displayed percentages differ slightly from 100%.
-- Suggested storage key: `spendly:data`, containing a versioned object with `version: 1` and an `expenses` array. Each record has a unique id, amountCents, description, category, date, createdAt, and updatedAt.
+- Suggested storage key: `spendly:data`, containing a versioned object with `version: 1` and an `expenses` array. Each record has a unique URL-safe id (1-100 ASCII letters, digits, underscores or hyphens), amountCents, description, category, date, createdAt, and updatedAt.
 - Validate both the envelope and every record, including unique ids, safe integer cents, allowed categories, valid dates, bounded strings, and timestamps. A missing key or a valid empty array is a normal first visit.
 - Malformed JSON, unsupported versions, or any invalid record triggers a recovery state. Do not silently drop entries or replace the original key. Offer retry, an explicit local raw-data download for recovery, and a separately confirmed reset. Only a confirmed reset may replace the invalid dataset with an empty one.
 - A failed read is not a first visit. A failed write preserves form input, shows an actionable error, and must not claim durable success. A retry should not duplicate the expense.

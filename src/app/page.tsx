@@ -1,5 +1,5 @@
-import { FirstVisit } from "@/components/first-visit";
+import { Overview } from "@/components/overview";
 
 export default function OverviewPage() {
-  return <FirstVisit />;
+  return <Overview />;
 }

@@ -1,11 +1,12 @@
 import assert from "node:assert/strict";
-import test, { after, afterEach, mock } from "node:test";
+import test, { after, afterEach, beforeEach, mock } from "node:test";
 import { JSDOM } from "jsdom";
 import { act, useState } from "react";
 import { AppRouterContext, type AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime.js";
 import { ExpenseProvider } from "../src/components/expense-provider";
 import { ExpenseForm } from "../src/components/expense-form";
 import { ExpenseList } from "../src/components/expense-list";
+import { EditExpense } from "../src/components/edit-expense";
 
 const dom = new JSDOM("<!doctype html><html><body></body></html>", { url: "http://localhost/expenses/new" });
 for (const name of ["window", "document", "HTMLElement", "HTMLInputElement", "HTMLSelectElement", "Event", "MouseEvent", "FormData"]) {
@@ -28,7 +29,7 @@ function Workspace({ initialRoute = "/expenses/new" }: { initialRoute?: string }
     prefetch() {},
     bfcacheId: "test-workspace",
   };
-  return <AppRouterContext.Provider value={router}><ExpenseProvider>{route === "/expenses/new" ? <ExpenseForm /> : <ExpenseList />}</ExpenseProvider></AppRouterContext.Provider>;
+  return <AppRouterContext.Provider value={router}><ExpenseProvider>{route === "/expenses/new" ? <ExpenseForm /> : route.endsWith("/edit") ? <EditExpense id={route.split("/")[2]} /> : <ExpenseList />}</ExpenseProvider></AppRouterContext.Provider>;
 }
 
 async function mount(initialRoute = "/expenses/new") {
@@ -54,6 +55,8 @@ function fillValid() {
   input("description").value = "  Lunch  ";
   input("category").value = "Food & Drink";
 }
+
+beforeEach(() => { dom.window.localStorage.clear(); });
 
 afterEach(async () => {
   if (root) await act(async () => { root!.unmount(); });
@@ -104,48 +107,48 @@ test("an empty submission reports all missing fields without losing today's date
   assert.notEqual(input("date").getAttribute("aria-invalid"), "true");
 });
 
-test("correcting an error adds one normalized purchase with clear temporary feedback", async () => {
+test("correcting an error adds one normalized purchase with durable feedback", async () => {
   await mount();
   await submit();
   fillValid();
   const date = input("date").value;
   await submit(2);
   assert.equal(document.querySelector("form"), null);
-  const list = document.querySelector('ul[aria-label="Expenses added this visit"]')!;
+  const list = document.querySelector('ul[aria-label="Saved expenses"]')!;
   assert.equal(list.children.length, 1);
   assert.match(list.textContent!, /Lunch/);
   assert.match(list.textContent!, /\$12\.34/);
   assert.match(list.textContent!, /Food & Drink/);
   assert.equal(list.querySelector("time")?.getAttribute("datetime"), date);
-  assert.match(document.querySelector('[role="status"]')!.textContent!, /added for this visit/);
-  assert.match(document.body.textContent!, /Refreshing or closing this page clears them/);
+  assert.match(document.querySelector('[role="status"]')!.textContent!, /Expense saved/);
+  assert.match(document.body.textContent!, /Saved only in this browser/);
 });
 
-test("a failed temporary add preserves input and allows one clean retry", async () => {
+test("a failed add preserves input and allows one clean retry", async () => {
   await mount();
   fillValid();
   const fail = mock.method(globalThis.crypto, "randomUUID", () => { throw new Error("Temporary id failure"); });
   await submit();
-  assert.match(document.querySelector('[role="alert"]')!.textContent!, /could not be added/);
+  assert.match(document.querySelector('[role="alert"]')!.textContent!, /have not been saved/);
   assert.equal(input("amount").value, "12.34");
   assert.equal(input("description").value, "  Lunch  ");
   assert.equal(document.querySelector<HTMLButtonElement>('button[type="submit"]')!.disabled, false);
   fail.mock.restore();
   await submit();
-  assert.equal(document.querySelector('ul[aria-label="Expenses added this visit"]')!.children.length, 1);
+  assert.equal(document.querySelector('ul[aria-label="Saved expenses"]')!.children.length, 1);
 });
 
-test("a fresh provider has no previous visit's temporary records", async () => {
+test("a new provider lifetime restores the previous visit's saved records", async () => {
   await mount();
   fillValid();
   await submit();
-  assert.ok(document.querySelector('ul[aria-label="Expenses added this visit"]'));
+  assert.ok(document.querySelector('ul[aria-label="Saved expenses"]'));
   await act(async () => { root!.unmount(); });
   root = undefined;
   document.body.replaceChildren();
   await mount("/expenses");
-  assert.equal(document.querySelector('ul[aria-label="Expenses added this visit"]'), null);
-  assert.match(document.body.textContent!, /starts with one purchase/);
+  assert.equal(document.querySelector('ul[aria-label="Saved expenses"]')!.children.length, 1);
+  assert.match(document.body.textContent!, /Lunch/);
 });
 
 test("focuses the category select when earlier fields are valid", async () => {
@@ -158,4 +161,92 @@ test("focuses the category select when earlier fields are valid", async () => {
   assert.match(input("category").getAttribute("aria-describedby")!, /category-error/);
   assert.equal(input("amount").value, "10");
   assert.equal(input("description").value, "Bus");
+});
+
+function button(text: string) {
+  const found = [...document.querySelectorAll<HTMLButtonElement>("button")].find(item => item.textContent === text);
+  assert.ok(found, `Missing button: ${text}`);
+  return found;
+}
+async function click(text: string) { await act(async () => { button(text).click(); }); }
+function stored() { return JSON.parse(dom.window.localStorage.getItem("spendly:data")!).expenses; }
+const saved = { id: "saved-one", amountCents: 1234, description: "Lunch", category: "Food & Drink", date: "2024-02-01", createdAt: "2024-02-01T12:00:00.000Z", updatedAt: "2024-02-01T12:00:00.000Z" };
+function seed() { dom.window.localStorage.setItem("spendly:data", JSON.stringify({ version: 1, expenses: [saved] })); }
+
+test("quota failure keeps every typed field and publishes no saved record until retry", async () => {
+  await mount(); fillValid(); const date = input("date").value;
+  const fail = mock.method(Object.getPrototypeOf(dom.window.localStorage), "setItem", () => { throw new Error("Quota"); });
+  await submit();
+  assert.ok(document.querySelector("form")); assert.equal(input("description").value, "  Lunch  "); assert.equal(input("amount").value, "12.34"); assert.equal(input("date").value, date);
+  assert.equal(dom.window.localStorage.getItem("spendly:data"), null); assert.match(document.body.textContent!, /not been saved/);
+  fail.mock.restore(); await submit(2); assert.equal(stored().length, 1); assert.match(document.body.textContent!, /Expense saved/);
+});
+
+test("editing loads saved values and persists changes under the same id", async () => {
+  seed(); await mount("/expenses/saved-one/edit");
+  assert.equal(input("amount").value, "12.34"); assert.equal(input("description").value, "Lunch"); assert.equal(input("date").value, "2024-02-01");
+  input("amount").value = "25.50"; input("description").value = "Updated lunch"; await submit();
+  assert.equal(stored()[0].id, "saved-one"); assert.equal(stored()[0].amountCents, 2550); assert.equal(stored()[0].createdAt, saved.createdAt);
+  assert.match(document.body.textContent!, /Expense updated/); assert.match(document.body.textContent!, /Updated lunch/);
+});
+
+test("failed edit retains the form and original saved data", async () => {
+  seed(); await mount("/expenses/saved-one/edit"); input("description").value = "Keep my edit";
+  const raw = dom.window.localStorage.getItem("spendly:data"); const fail = mock.method(Object.getPrototypeOf(dom.window.localStorage), "setItem", () => { throw new Error("Quota"); });
+  await submit(); assert.equal(input("description").value, "Keep my edit"); assert.equal(dom.window.localStorage.getItem("spendly:data"), raw);
+  fail.mock.restore(); await submit(); assert.equal(stored()[0].description, "Keep my edit");
+});
+
+test("a missing edit id has a clear route back and does not modify storage", async () => {
+  seed(); const raw = dom.window.localStorage.getItem("spendly:data"); await mount("/expenses/missing/edit");
+  assert.match(document.body.textContent!, /Expense not found/); assert.equal(document.querySelector("form"), null);
+  assert.equal(document.querySelector('a[href="/expenses"]')?.textContent, "Back to expenses"); assert.equal(dom.window.localStorage.getItem("spendly:data"), raw);
+});
+
+test("delete cancel preserves data; failed confirmation preserves it; a retry deletes the last record", async () => {
+  seed(); await mount("/expenses"); const raw = dom.window.localStorage.getItem("spendly:data");
+  await click("Delete"); assert.equal(document.activeElement, button("Confirm delete")); await click("Cancel delete"); assert.equal(dom.window.localStorage.getItem("spendly:data"), raw);
+  await click("Delete"); const fail = mock.method(Object.getPrototypeOf(dom.window.localStorage), "setItem", () => { throw new Error("Quota"); });
+  await click("Confirm delete"); assert.equal(dom.window.localStorage.getItem("spendly:data"), raw); assert.match(document.body.textContent!, /Could not save/);
+  fail.mock.restore(); await click("Confirm delete"); assert.deepEqual(stored(), []); assert.match(document.body.textContent!, /starts with one purchase/);
+  assert.equal(document.activeElement, document.querySelector("h1"));
+});
+
+test("corrupt data remains unchanged until a separately confirmed successful reset", async () => {
+  dom.window.localStorage.setItem("spendly:data", "{"); await mount("/expenses");
+  assert.match(document.body.textContent!, /original data has been kept/); assert.equal(document.querySelector("form"), null); assert.ok(button("Download original data"));
+  await click("Reset saved data"); await click("Cancel reset"); assert.equal(dom.window.localStorage.getItem("spendly:data"), "{");
+  await click("Reset saved data"); const fail = mock.method(Object.getPrototypeOf(dom.window.localStorage), "setItem", () => { throw new Error("Quota"); });
+  await click("Confirm reset"); assert.equal(dom.window.localStorage.getItem("spendly:data"), "{");
+  fail.mock.restore(); await click("Confirm reset"); assert.deepEqual(stored(), []); assert.match(document.body.textContent!, /starts with one purchase/);
+});
+
+test("denied storage is a recovery screen; retry loads the existing dataset", async () => {
+  seed(); const fail = mock.getter(dom.window, "localStorage", () => { throw new Error("Denied"); }); await mount("/expenses");
+  assert.match(document.body.textContent!, /storage is unavailable/); assert.equal(document.querySelector('ul[aria-label="Saved expenses"]'), null);
+  fail.mock.restore(); await click("Retry loading"); assert.match(document.body.textContent!, /Lunch/);
+});
+
+test("an external storage change cannot overwrite records, and reload retains the typed form", async () => {
+  seed(); await mount(); fillValid(); dom.window.localStorage.setItem("spendly:data", JSON.stringify({ version: 1, expenses: [{ ...saved, description: "External change" }] }));
+  await submit(); assert.match(document.body.textContent!, /saved data changed/); assert.equal(stored().length, 1); assert.equal(stored()[0].description, "External change");
+  await click("Reload saved data"); assert.equal(input("description").value, "  Lunch  "); await submit(); assert.equal(stored().length, 2);
+});
+
+test("reloading corrupt storage after a failed save keeps the complete draft mounted", async () => {
+  seed(); await mount(); fillValid(); const date = input("date").value;
+  dom.window.localStorage.setItem("spendly:data", "{"); await submit(); await click("Reload saved data");
+  assert.ok(document.querySelector("form"), "The recovery read must not unmount the form");
+  assert.equal(input("description").value, "  Lunch  "); assert.equal(input("amount").value, "12.34"); assert.equal(input("category").value, "Food & Drink"); assert.equal(input("date").value, date);
+  assert.equal(dom.window.localStorage.getItem("spendly:data"), "{");
+  seed(); await click("Reload saved data"); await submit(); assert.equal(stored().length, 2);
+});
+
+test("denied storage during form reload preserves the draft and permits retry after repair", async () => {
+  seed(); await mount(); fillValid(); const date = input("date").value;
+  const fail = mock.getter(dom.window, "localStorage", () => { throw new Error("Denied"); });
+  await submit(); await click("Reload saved data");
+  assert.ok(document.querySelector("form"), "Denied reads must not unmount the form");
+  assert.equal(input("description").value, "  Lunch  "); assert.equal(input("date").value, date);
+  fail.mock.restore(); await click("Reload saved data"); await submit(); assert.equal(stored().length, 2);
 });

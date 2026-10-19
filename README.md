@@ -4,9 +4,9 @@ A simple personal expense tracker: record everyday purchases quickly and underst
 
 ## Project status
 
-**Phase 4: expense form, validation, and temporary feedback.** Add purchases through the four-field form and view them during the current visit. Entries exist only in memory: refresh or close the page and they are cleared. localStorage, edit/delete, durable history, totals, and weekly calculations are not implemented. Phase 5 requires the user's confirmation. No Vercel deployment or deployed first-run check has been completed.
+**Phase 5: local persistence and expense management.** Purchases are stored in this browser with validated localStorage data. Add, edit, delete, review history, and see this week's total. Invalid data opens recovery without silently overwriting it. Weekly category analysis and deployment are not implemented yet. Phase 6 has been authorized as the next separate milestone. No deployed first-run check has been completed.
 
-Stack: Next.js App Router, React, TypeScript, Tailwind CSS, and ESLint. Browser localStorage is planned for Phase 5. No accounts, database, backend services, or external runtime APIs.
+Stack: Next.js App Router, React, TypeScript, Tailwind CSS, and ESLint. Data is saved in browser localStorage. No accounts, database, backend services, or external runtime APIs.
 
 ## Who it is for and why they return
 
@@ -84,14 +84,13 @@ See [flow details and exceptional states](flows.md) and the [product brief](docs
 
 | Route | Current experience |
 | --- | --- |
-| `/` | First-visit purpose, primary entry link, brief workflow, and local-data explanation |
-| `/expenses/new` | Single-column expense form, field validation, and temporary submission |
-| `/expenses` | This visit's temporary purchases and feedback, or an actionable empty state |
-| `/summary` | Preview empty state with first-expense entry link |
+| `/` | Loading/recovery, first visit, or saved-data overview with weekly total |
+| `/expenses/new` | Validated form that saves only after a successful local write |
+| `/expenses` | Saved history, this week's total, edit/delete, and an actionable empty state |
+| `/summary` | Category review placeholder; saved totals are available on Expenses |
+| `/expenses/[id]/edit` | Prefilled edit form or a clear missing-record state |
 
-The edit route `/expenses/[id]/edit` is planned for Phase 5 and is not available in this preview.
-
-Shared navigation connects Overview, Expenses, Weekly Summary, and Add Expense. The form uses amount (USD), a short description, category, and date; date defaults to today. Weeks run Monday-Sunday using local dates. The shell, navigation, first-visit presentation, and expense form are implemented. Reporting rules remain planned. The home page does not inspect storage or distinguish returning users yet. New entries appear on Expenses with temporary feedback; no durable-save message or totals are shown.
+Shared navigation connects Overview, Expenses, Weekly Summary, and Add Expense. The form uses amount (USD), a short description, category, and date; date defaults to today. Weeks run Monday-Sunday using local dates. The app reads and validates browser storage before showing a first visit or saved-data view. Successful writes update the saved record and weekly total immediately. Detailed category reporting remains Phase 6 work.
 
 ## Competitor onboarding research
 
@@ -126,7 +125,7 @@ npm ci
 npm run dev
 ```
 
-Open http://localhost:3000. The preview supports adding expenses for the current visit only. Navigate within the app to retain temporary entries. Refreshing or closing the page clears them.
+Open http://localhost:3000. Add expenses, view saved history and this week's total, or edit/delete existing records. Data is confined to this browser profile and origin; localhost and a future Vercel site do not share data.
 
 ```bash
 npm test
@@ -144,9 +143,11 @@ Read the [design system](docs/design-system.md) for colors, type, spacing, respo
 
 ## Verification and persistence
 
-See the [verification plan](docs/verification.md) for required refresh and close/reopen checks, missing/empty/invalid/corrupt storage cases, storage failures, form validation, calculations, and accessibility. Expense validation and simulated-DOM interaction tests run with `npm test`. Persistence tests remain pending Phase 5. Phase 2 checks cover TypeScript, ESLint, a production build, HTTP responses for all four routes, component semantics, and calculated color contrast. See [Phase 2 verification](docs/phase-2-review.md) [Phase 3 verification](docs/phase-3-review.md), and [Phase 4 verification](docs/phase-4-review.md) for actual results and limitations. [Phase 1 review](docs/phase-1-review.md) records the earlier documentation audit.
+See the [verification plan](docs/verification.md) and [Phase 5 evidence](docs/phase-5-review.md). `npm test` covers validation, storage schema and failures, real-component DOM behavior, edit/delete/reset, and cross-runtime file-backed Web Storage. Actual browser refresh and close/reopen remain **unverified** because no browser connection was available. Provider remount and Node process tests are not substitutes for that browser check.
 
-At this milestone, data is temporary in memory and is lost on refresh/close. In Phase 5, saved data will remain local to the current browser profile and site origin; it will not sync between devices or between localhost and Vercel. Invalid storage must not be silently overwritten. No sample expenses will be represented as the user's saved data.
+Data stays in this browser profile and site origin. It does not sync across devices, and clearing site data removes it. Writes complete before success feedback. Invalid JSON, unsupported versions, invalid records and duplicate ids enter recovery; the raw value is retained. Recovery offers retry, a local raw download, and a separately confirmed reset. Conflicting external changes reject stale writes. Form-specific reload failures preserve typed values.
+
+Earlier evidence: [Phase 1](docs/phase-1-review.md), [Phase 2](docs/phase-2-review.md), [Phase 3](docs/phase-3-review.md), and [Phase 4](docs/phase-4-review.md).
 
 ## Deployed agent first-run check
 
@@ -170,6 +171,8 @@ The agent must actually open the live Vercel site as a new user, add three purch
 - [Phase 3 verification](docs/phase-3-review.md)
 - [Phase 4 form plan](docs/phase-4-plan.md)
 - [Phase 4 verification](docs/phase-4-review.md)
+- [Phase 5 persistence plan](docs/phase-5-plan.md)
+- [Phase 5 verification](docs/phase-5-review.md)
 - [Detailed flows](flows.md)
 - [Research synthesis](docs/research/README.md)
 - [Seven-phase plan](docs/phase-plan.md)

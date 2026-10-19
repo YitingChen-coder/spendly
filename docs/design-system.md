@@ -1,6 +1,6 @@
 # Spendly Design System
 
-Status: foundation introduced in Phase 2, reused by the Phase 4 form. Interface copy is English.
+Status: foundation introduced in Phase 2, reused by the Phase 5 persistence and management views. Interface copy is English.
 
 ## Visual direction
 
@@ -43,7 +43,7 @@ At Tailwind's `lg` breakpoint (1024px), use a 250px left navigation column and a
 | Card | Styled neutral container; supports native div/ARIA attributes; caller supplies semantic headings |
 | Navigation | Four Next links; exact-path matching selects only one active item using `aria-current="page"` |
 | AppShell | Shared brand, responsive navigation, skip link, one main landmark, and footer |
-| FirstVisit / EmptyWorkspace | First-use purpose, clear entry links, and truthful temporary-data notes; no fake spending |
+| FirstVisit / EmptyWorkspace | First-use purpose, clear entry links, and truthful browser-only saving notes; no fake spending |
 
 Input, FormField, SelectField, and Button are used by the Phase 4 single-column expense form. Navigation uses links styled with buttonStyles where appropriate. The initial Phase 2 preview did not mount a pretend form.
 

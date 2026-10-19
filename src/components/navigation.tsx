@@ -17,7 +17,7 @@ export function Navigation() {
   return (
     <nav aria-label="Main navigation" className="flex flex-wrap gap-1 lg:flex-col lg:gap-2">
       {items.map(({ href, label, icon }) => {
-        const active = pathname === href;
+        const active = pathname === href || (href === "/expenses" && /^\/expenses\/[^/]+\/edit$/.test(pathname));
         return (
           <Link
             key={href}
