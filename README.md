@@ -234,6 +234,7 @@ On October 19, 2026, the user supplied a screenshot of the GitHub repository REA
 - [Phase 7 deployment plan](docs/phase-7-plan.md)
 - [Phase 7 deployment and pending browser check](docs/phase-7-review.md)
 - [Final flow source review and process limitations](docs/final-flow-review.md)
+- [Final assignment audit](docs/final-assignment-audit.md)
 - [Submission checklist](docs/submission-checklist.md)
 - [Class presentation notes](docs/presentation-notes.md)
 - [Detailed flows](flows.md)

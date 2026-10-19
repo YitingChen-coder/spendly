@@ -16,7 +16,7 @@ The weekly review identifies category amounts, shares, counts and tied leaders h
 
 Independent code review found that a failed save followed by a corrupt/denied reload could unmount the uncontrolled form and lose its draft. Regression tests reproduced it; guarded form reload now preserves input. Another review caught conflicting card spacing and stale documentation, which were corrected. These are code/design review findings, not online new-user usability feedback.
 
-A user-supplied report from a separate remote Codex session records successful deployed Chromium first-run, validation, totals, persistence and recovery checks. No application defect was reported, so no usability-driven code fix is claimed. README records the feedback and source limitations. Screenshot files and comprehensive manual accessibility checks remain outstanding.
+Actual deployed Chromium acceptance and follow-up evidence are saved in docs/verification/online-2026-10-19/. They cover first visit, guide controls, validation/input retention, add/edit/delete, exact totals, keyboard-only entry, selected mobile layouts and refresh/tab/browser-restart persistence. No blocking application defect was reported, so no usability-driven code fix is claimed. The user subsequently supplied a GitHub README screenshot confirming Mermaid rendering. Comprehensive screen-reader, cross-browser and exhaustive keyboard coverage remain outside the verified scope.
 
 ## Agentic workflow
 
