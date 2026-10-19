@@ -1,0 +1,652 @@
+{
+  "time": "2026-10-19T13:51:30.679929-05:00",
+  "mode": "system Chromium controlled by Python Playwright; fresh isolated persistent profile",
+  "checks": [
+    {
+      "target": "production",
+      "url": "https://spendly-nu-liard.vercel.app/",
+      "status": 200,
+      "title": "Spendly | Personal Expense Tracker",
+      "mermaid_containers": 0,
+      "iframe_sources": [],
+      "body_excerpt": "Skip to content\nspendly.\nOverview\nExpenses\nWeekly Summary\nAdd Expense\n\nA little clarity.\nEvery day.\n\nYour personal spending space\nLocal only\n\nWELCOME TO SPENDLY\n\nKnow where your money goes.\n\nKeep everyday expenses simple. Record the small purchases, then see what adds up each week.\n\nStart with one everyday purchase.\n\nLunch, groceries, or the ride h",
+      "failed_requests": []
+    },
+    {
+      "target": "github",
+      "url": "https://github.com/YitingChen-coder/spendly",
+      "status": 200,
+      "title": "GitHub - YitingChen-coder/spendly: A lightweight personal expense tracker built with Next.js and Tailwind CSS. \u00b7 GitHub",
+      "mermaid_containers": 2,
+      "iframe_sources": [],
+      "body_excerpt": "Skip to content\nNavigation Menu\nSign in\nAppearance settings\nPlatform\nAI CODE CREATION\nGitHub CopilotWrite better code with AI\nGitHub Copilot appDirect agents from issue to merge\nMCP RegistryIntegrate external tools\nDEVELOPER WORKFLOWS\nActionsAutomate any workflow\nCodespacesInstant dev environments\nIssuesPlan and track work\nCode ReviewManage code ch",
+      "failed_requests": [
+        {
+          "url": "https://github.githubassets.com/assets/light-3a3d2c708970e4e8.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/light_high_contrast-9c7b506bdc5ea73f.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/dark-c9dacb4ec19616db.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/dark_high_contrast-5ef38214a3eabc7d.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/primer-primitives-02e066689466a8cd.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/primer-38ae573fa780d76a.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/global-58d1122073b19732.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/github-0b4a3ee3d18dc2f0.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/repository-542ca59b4b92999d.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/code-b25a4886e30e3e5f.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/app-runtime.11d24f4ef5060b0f.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/react-core.45fb94e912e16ebd.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/primer-react-css.41e8289c1ff152bd.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/0yx.87256cbd6216cf2c.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/react-e27d1b3e03961e68.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/react-compiler-runtime-4610bd6d3de9c049.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/scheduler-58b860b049ca307c.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/k54.e9cc8c0ec9e8e133.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/code-view.93c25dd07ebf9fcf.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/keyboard-shortcuts-dialog.af0a2455e65c0ea3.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/app-install-banner-partial.dca2c85696cedfa7.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/primer-react-brand-css.011e078829877390.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://avatars.githubusercontent.com/u/337905006?s=60&v=4",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/marketing-header.a6885914ab865d1c.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/global-nav-bar.334b808ac924e456.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/primer-react-css.41e8289c1ff152bd.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/primer-react-css.41e8289c1ff152bd.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/react-dom-e5fd46a22d5c4058.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/primer-react-css.41e8289c1ff152bd.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/0yx.87256cbd6216cf2c.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/k54.e9cc8c0ec9e8e133.module.css",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/react-dom-client-1b4a3ee065998cea.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/react-is-e0b593954b4706d8.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/react-jsx-runtime-4915cb0f5b3aff04.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/react-reconciler-8e99e505c4429605.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/high-contrast-cookie-dac2ceb09ceb817d.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/wp-runtime-f6a2ff455483e828.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/app-foundation-799625033ee8341e.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/app-runtime-75fe7337a5ae1f43.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/fetch-utilities-4206e824857cdbac.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/ser-1ce9ba53965ee000.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/tp-e043b09789480cb5.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/environment-99b4fbedb2568d63.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/catalyst-5bc36fa5a846f5a0.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/selector-observer-7ae05416e4a383ae.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/relative-time-element-b2d8b7dede692c9f.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/by-473024a3f6cb3892.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/ja9-b94de714266ba389.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/3h2-5f8899065b81d778.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/t2-19741658de225445.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/z8-5c899bb34cf0fc51.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/hj-ece3bec966e8a2b6.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/wc-33edcf25ba11d33f.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/github-elements-681e586af54bcd82.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/element-registry-d77cd62016abc996.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/runtime-helpers-b7e0a61126a143c7.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/aria-live-edd851c704c6b3ca.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/hotkey-a82e6cb07443fd1c.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/react-core-5d5f0e0139437176.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/a96-f44dcca0945fa24d.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/ur-b820e79826e6a550.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/4t-f1181f796eb9ea15.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/pb-d77644db2d006abd.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/6n-b72a71e2477d5d76.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/z-b2cf9f86cb4bed3b.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/9k-707f3c96c4acaae5.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/0r-4c4af04176d5b5a2.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/etr-10a33b4e28a5264e.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/ow-98d10140e8228c74.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/b3-8c6a9e264988c148.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/eonf-7297a0ec85fc5281.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/xrz-5d469e804fd41d09.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/yga-dd50cf95593467fe.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/behaviors-de9504f7f476a23d.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/n9c-3506ddcf805d5421.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/codespaces-1390381f196a2770.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/li-902486fa635be114.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/repositories-1d78bbdc46974667.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/code-menu-2527d3cf58fa9877.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/primer-react-aa472ad9b7027c95.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/op-76db8804e205b5d5.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/nc-2485e88d8a01d9c2.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/qmp-308230626a2aedb0.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/j6-f38514fb943db6ec.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/t7l-699ca510ac327acf.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/4u-bf6e08201764cb0a.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/s0-307dd28b274d0fad.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/y5-4fcf85a93b5b06b0.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/zd-61606dd1c14634aa.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/7v-88e5da497f84e96d.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/15-f26349519bec5482.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/5w-452c3a937483ff49.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/la-27ea91f01fa7ffcf.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/a3-535693ca876f3978.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/fx0-05f68952cd4c4b54.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/tjn-c8192b2dabd1ae8c.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/owu-d27475511623d054.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/j8z-2b6baec9227eb98c.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/znp-671ea2c74aed7e30.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/3s-ebbc335534e40b2a.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/gj-b68aa2e46dac0e69.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/4y-9b20c7f1b1e68334.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/0-8bb1b20ebce778dd.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/jn-8d682b11fce7d25e.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/fn-80ae055b0fa5b680.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/q6j-a0f5c18f21eed301.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/b2-35e229a50d0f3d05.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/pgx-dd79b7c9d5ccc946.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/lrk-ea49e115e48ba34b.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/mlz-b5402a5997108f93.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/dx-4c2b444c4f196d9b.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/sm-22346830d5e5a763.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/i2-5e26ac37ee961d06.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/zxp-bd95199c8fe820ae.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/43-efe637f521d688f0.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/jh-0ab10fa757b2a800.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/0yx-6e44b5cba2d0d1f7.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/k54-6cf64d936e253d31.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/up-9ba623fe31b3ad8b.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/w8-e0e21fe7eec4f69d.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/gd-c0d7e6321e1379df.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/d0-05f8d14a7470eb9e.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/c28-ad9d5f54d5d8ad6b.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/ti-5a1f71482f5e6a07.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/y2-2f581d0564f88f89.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/9xk-7f6912c4c8ddb34a.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/6z-3d56bf6c42a095ae.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/code-view-9adb5cfb588aa2a3.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/bbj-120f614daab2ee1d.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/keyboard-shortcuts-dialog-ec57c972ab126200.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/g6m-a05cbcd94ac196d8.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/app-install-banner-partial-79ac08a29d7f437e.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/et9-6f05589c8621e03c.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/id-6e69bc70bac6b188.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/fz-cb55e83c29d0a351.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/jbz-52a745dad9e9a69a.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/h4-1b8e14009663edc9.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/favicons/favicon.svg",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/mhh-8ec07c1858d988b9.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/97-0c9e3d8ca57bb36c.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/marketing-header-1c361c959d00f95c.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/r7n-381a130887b7aeb7.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/gex-d368cfd87cd0aa60.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/t5-60a7d058a0d3af98.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/favicons/favicon.png",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/5l-a09e91e64044f066.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/1al-dbc76bfa747870da.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/9t-064ddb7b929b34ad.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/xpm-699cadc1a20b7325.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/24-8bc4d151664bf03d.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/4h-9938b919ef32394f.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/3j7-de6ab620d2c6ec1d.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/aj-6d3aa2e6c4939409.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/li6-ab5fab0181849018.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/wv-1550a4c1bdeb0d58.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        },
+        {
+          "url": "https://github.githubassets.com/assets/global-nav-bar-59ec02c3be278a93.js",
+          "failure": "net::ERR_TUNNEL_CONNECTION_FAILED"
+        }
+      ]
+    }
+  ],
+  "browser": "154.0.8037.57"
+}

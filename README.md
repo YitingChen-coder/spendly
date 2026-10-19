@@ -4,7 +4,7 @@ A simple personal expense tracker: record everyday purchases quickly and underst
 
 ## Project status
 
-**Phase 7: deployed, remote agent test report recorded, floating guide added.** Spendly is live on Vercel's free Hobby plan at [spendly-nu-liard.vercel.app](https://spendly-nu-liard.vercel.app). A user-supplied report from a separate Codex session records successful deployed Chromium first-run, recovery and persistence checks. The report is incorporated below with provenance and limitations; screenshot synchronization and the remaining manual checks are still outstanding.
+**Phase 7: deployed; independent online Chromium acceptance recorded.** Spendly is live on Vercel's free Hobby plan at [spendly-nu-liard.vercel.app](https://spendly-nu-liard.vercel.app). This cloud session independently verified the public site in Chromium and saved screenshots for the guide, expense flows, keyboard entry, mobile layouts and browser-restart persistence. An earlier user-supplied report is retained with its provenance. GitHub Mermaid visual rendering remains blocked by static-asset access; remaining manual and cross-browser checks are listed below.
 
 Stack: Next.js App Router, React, TypeScript, Tailwind CSS, and ESLint. Data is saved in browser localStorage. No accounts, database, backend services, or external runtime APIs.
 
@@ -196,7 +196,16 @@ This cloud session independently ran 131 tests (all passed, none skipped), TypeS
 
 Agent feedback from this actual local run: the first-expense action was discoverable; invalid submission focused Amount; saved purchases immediately appeared in history and weekly totals; guide dismissal survived reload and Escape returned focus to its launcher; canceling deletion restored focus and preserved records. No application defect was found in these exercised tasks, so no product fix or post-fix retest is claimed. An initial automation selector used an exact category label that omitted the required-field marker; correcting the test to target the named select resolved that test-only timeout.
 
-**Phase 7 remains blocked in this instance:** the public production URL returned proxy CONNECT 403 over HTTP and `ERR_TUNNEL_CONNECTION_FAILED` in actual Chromium. Existing Vercel CLI authentication and `VERCEL_TOKEN` are absent. No new deployment or successful online usability test is claimed. Local results do not replace deployed verification. Comprehensive keyboard/screen-reader checks, all-page mobile layouts and Safari/Firefox remain unverified. See [the current cloud evidence and setup workaround](docs/verification/cloud-2026-10-19/report.md). Existing phase commits are already present on GitHub; they were not recreated or split.
+**Latest online acceptance supersedes the earlier access blocker:** this session successfully exercised the existing public Vercel deployment in independent Chromium after trusting the environment's existing proxy CA, with TLS verification enabled. No redeployment or Vercel token was needed. The earlier local results and earlier attributed remote report remain separate evidence.
+
+## Final online browser acceptance
+
+On October 19, 2026 (America/Chicago), actual Chromium 154.0.8037.57 passed the production first-visit/Quick Guide walkthrough, three real form submissions totaling **$40.00**, edit to **$42.50**, canceled/confirmed deletion to **$35.00**, invalid-form focus and preservation of typed values. Exact saved data survived refresh, closing/reopening a tab and full Chromium shutdown/relaunch using the same isolated persistent profile. Category shares were **31.3%, 50%, 18.8%**. A separate keyboard-only path used the skip link, navigation, labeled fields, category selection and submission to save a **$1.25** purchase. Mobile core routes at 375px and summary at 375/768/1280px had no horizontal overflow. Corrupt-data recovery preserved the raw value.
+
+Actual agent feedback: the initial add action was identifiable, error correction retained the draft, saved records immediately updated history/totals, guide dismissal survived reload, and deletion cancellation restored focus. Narrow screenshots show the fixed guide/launcher over some underlying content; scrolling/dismissal remained available and keyboard entry succeeded. No blocking application defect was confirmed, so no application fix or post-fix retest is claimed. Application functionality was unchanged.
+
+**Remaining unverified:** GitHub README HTML loaded, but proxy-blocked GitHub CSS/JavaScript prevented confirmation of Mermaid's visual rendering. Screen-reader/Safari/Firefox testing and comprehensive keyboard/all-page coverage are not claimed. The final guide link/Done controls were not separately exercised in this run. See the [actual steps, outcome matrix, limitations and screenshots](docs/verification/online-2026-10-19/report.md), including the [mobile guide](docs/verification/online-2026-10-19/mobile-first-guide.png), [weekly summary](docs/verification/online-2026-10-19/summary-375.png), and [browser-restart return](docs/verification/online-2026-10-19/return-after-browser-restart.png).
+
 
 ## Submission links
 

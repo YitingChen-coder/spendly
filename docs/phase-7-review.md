@@ -100,3 +100,7 @@ A final source-based flow review is saved in `final-flow-review.md`; it explicit
 ## User acceptance of flow planning
 
 The user confirmed that the existing agent-assisted planning should be treated as complete. README now summarizes the planning and links to flows.md, the seven-phase plan and the final review. A specific slash-command execution is not claimed, and no additional `/plan` task remains open. Browser verification limitations are unchanged.
+
+## Independent online acceptance in the current cloud session
+
+October 19, 2026: actual production Chromium walkthrough, browser-restart persistence, keyboard-only entry and responsive checks now passed. No redeployment, token or application change was required. The earlier proxy blocker was resolved for the production host using the environment's existing CA with TLS verification retained. GitHub static assets remain blocked, so Mermaid visual rendering remains unverified. The full current evidence and screenshot index are in [the final online report](verification/online-2026-10-19/report.md). This supersedes earlier current-status statements about inability to test the deployed guide; historical reports above retain their original scope.

@@ -30,3 +30,7 @@ Current limitation: browser outcomes are supplied by another Codex session and h
 ## Latest remote verification attempt
 
 The user supplied a remote Chromium report confirming GitHub main at `6a7cc1a`. Production navigation failed with proxy CONNECT 403 and a browser tunnel-connection error. Guide interactions and dismissal persistence, keyboard-only navigation, core flows with the guide, and overlap/scrolling at three viewport widths were not executed. GitHub README source contained the three required flow sections, but blocked static assets prevented visual Mermaid verification. No application defect was confirmed. Earlier successful browser results predate the guide.
+
+## Latest independent online acceptance
+
+October 19, 2026: this cloud session independently passed production guide/navigation, validation/input retention, add/edit/delete, exact totals/category shares and refresh/tab/browser-restart persistence. Keyboard-only entry and selected mobile layouts also passed. New screenshots and actual results are saved in [the final online report](verification/online-2026-10-19/report.md). Earlier remote screenshot recovery is no longer needed as evidence of these newly executed checks; provenance remains distinct. No redeployment or VERCEL_TOKEN is needed. Remaining requested blocker: visual GitHub Mermaid rendering, because its static assets were denied by the proxy. Manual reader, cross-browser and exhaustive state/viewport coverage remain unverified; Classroom submission is not claimed.
