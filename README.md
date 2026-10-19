@@ -4,7 +4,7 @@ A simple personal expense tracker: record everyday purchases quickly and underst
 
 ## Project status
 
-**Phase 5: local persistence and expense management.** Purchases are stored in this browser with validated localStorage data. Add, edit, delete, review history, and see this week's total. Invalid data opens recovery without silently overwriting it. Weekly category analysis and deployment are not implemented yet. Phase 6 has been authorized as the next separate milestone. No deployed first-run check has been completed.
+**Phase 6: weekly spending review and returning experience.** Add, edit and delete saved purchases; review this week's total, categories, percentages and counts; return to recent expenses and older history. Data is stored locally in this browser. Invalid data opens recovery without silent overwrites. Deployment and the live agent first-run check remain Phase 7 and require confirmation. Actual browser lifecycle and visual/accessibility checks remain unverified in this session.
 
 Stack: Next.js App Router, React, TypeScript, Tailwind CSS, and ESLint. Data is saved in browser localStorage. No accounts, database, backend services, or external runtime APIs.
 
@@ -87,10 +87,10 @@ See [flow details and exceptional states](flows.md) and the [product brief](docs
 | `/` | Loading/recovery, first visit, or saved-data overview with weekly total |
 | `/expenses/new` | Validated form that saves only after a successful local write |
 | `/expenses` | Saved history, this week's total, edit/delete, and an actionable empty state |
-| `/summary` | Category review placeholder; saved totals are available on Expenses |
+| `/summary` | Weekly category amounts, percentages, counts, leading-category insight and honest empty-week state |
 | `/expenses/[id]/edit` | Prefilled edit form or a clear missing-record state |
 
-Shared navigation connects Overview, Expenses, Weekly Summary, and Add Expense. The form uses amount (USD), a short description, category, and date; date defaults to today. Weeks run Monday-Sunday using local dates. The app reads and validates browser storage before showing a first visit or saved-data view. Successful writes update the saved record and weekly total immediately. Detailed category reporting remains Phase 6 work.
+Shared navigation connects Overview, Expenses, Weekly Summary, and Add Expense. The form uses amount (USD), a short description, category, and date; date defaults to today. Weeks run Monday-Sunday using local dates. The app reads and validates browser storage before showing a first visit or saved-data view. Successful writes update the saved record and weekly total immediately. The weekly category view is implemented. Returning home shows three recent saved expenses, and old history stays reachable when this week is empty. Focus/visibility and a minute check update the local reporting day when returning to an open tab.
 
 ## Competitor onboarding research
 
@@ -125,7 +125,7 @@ npm ci
 npm run dev
 ```
 
-Open http://localhost:3000. Add expenses, view saved history and this week's total, or edit/delete existing records. Data is confined to this browser profile and origin; localhost and a future Vercel site do not share data.
+Open http://localhost:3000. Add expenses, view saved history and weekly category review, or edit/delete existing records. Data is confined to this browser profile and origin; localhost and a future Vercel site do not share data.
 
 ```bash
 npm test
@@ -143,9 +143,11 @@ Read the [design system](docs/design-system.md) for colors, type, spacing, respo
 
 ## Verification and persistence
 
-See the [verification plan](docs/verification.md) and [Phase 5 evidence](docs/phase-5-review.md). `npm test` covers validation, storage schema and failures, real-component DOM behavior, edit/delete/reset, and cross-runtime file-backed Web Storage. Actual browser refresh and close/reopen remain **unverified** because no browser connection was available. Provider remount and Node process tests are not substitutes for that browser check.
+See the [verification plan](docs/verification.md), [Phase 5 evidence](docs/phase-5-review.md), and [Phase 6 evidence](docs/phase-6-review.md). `npm test` covers validation, storage schema and failures, real-component DOM behavior, edit/delete/reset, and cross-runtime file-backed Web Storage. Actual browser refresh and close/reopen remain **unverified** because no browser connection was available. Provider remount and Node process tests are not substitutes for that browser check.
 
 Data stays in this browser profile and site origin. It does not sync across devices, and clearing site data removes it. Writes complete before success feedback. Invalid JSON, unsupported versions, invalid records and duplicate ids enter recovery; the raw value is retained. Recovery offers retry, a local raw download, and a separately confirmed reset. Conflicting external changes reject stale writes. Form-specific reload failures preserve typed values.
+
+Weekly analysis includes only recorded purchases in the displayed Monday-Sunday date range. Percentages are rounded to one decimal; tiny positive shares display `<0.1%`, and totals may differ slightly from 100%. Tied leading categories are identified as ties. No sample expenses or unsupported comparisons are shown.
 
 Earlier evidence: [Phase 1](docs/phase-1-review.md), [Phase 2](docs/phase-2-review.md), [Phase 3](docs/phase-3-review.md), and [Phase 4](docs/phase-4-review.md).
 
@@ -173,6 +175,8 @@ The agent must actually open the live Vercel site as a new user, add three purch
 - [Phase 4 verification](docs/phase-4-review.md)
 - [Phase 5 persistence plan](docs/phase-5-plan.md)
 - [Phase 5 verification](docs/phase-5-review.md)
+- [Phase 6 weekly-review plan](docs/phase-6-plan.md)
+- [Phase 6 verification](docs/phase-6-review.md)
 - [Detailed flows](flows.md)
 - [Research synthesis](docs/research/README.md)
 - [Seven-phase plan](docs/phase-plan.md)

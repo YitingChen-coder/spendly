@@ -1,6 +1,6 @@
 # Spendly Design System
 
-Status: foundation introduced in Phase 2, reused by the Phase 5 persistence and management views. Interface copy is English.
+Status: foundation introduced in Phase 2, reused by the Phase 6 weekly review and returning views. Interface copy is English.
 
 ## Visual direction
 
@@ -43,7 +43,7 @@ At Tailwind's `lg` breakpoint (1024px), use a 250px left navigation column and a
 | Card | Styled neutral container; supports native div/ARIA attributes; caller supplies semantic headings |
 | Navigation | Four Next links; exact-path matching selects only one active item using `aria-current="page"` |
 | AppShell | Shared brand, responsive navigation, skip link, one main landmark, and footer |
-| FirstVisit / EmptyWorkspace | First-use purpose, clear entry links, and truthful browser-only saving notes; no fake spending |
+| FirstVisit / Overview / WeeklyReview | First-use guidance, saved-data return view, and recorded-only category review with honest empty states |
 
 Input, FormField, SelectField, and Button are used by the Phase 4 single-column expense form. Navigation uses links styled with buttonStyles where appropriate. The initial Phase 2 preview did not mount a pretend form.
 
@@ -54,3 +54,9 @@ Native links/buttons/inputs/selects preserve browser keyboard semantics. Global 
 Calculated token contrast ratios: ink/white 14.91:1, muted/white 6.03:1, muted/canvas 5.61:1, white/brand 7.80:1, brand/brand-soft 6.71:1, danger/white 6.57:1. Input boundary/white is 3.66:1. Decorative line borders are not the sole control boundary.
 
 Static semantic checks verified Button types/disabled state, FormField label/error/hint associations and native value passthrough, Input native attributes, and Card ARIA attributes. These checks and calculated contrast are not a substitute for actual keyboard, screen-reader, or visual responsive testing. Browser visual testing was unavailable in this session and remains a later verification obligation.
+
+## Weekly review and return states
+
+Category rows provide readable names, amounts, percentages and counts. Proportional bars are decorative (`aria-hidden`) and have no animation. The insight explicitly handles ties. Text never depends on bar color. Empty weeks retain history links and do not imply zero real-world spending. Returning home includes three real recent records, a summary link and current-week recorded total. A local-calendar subscription updates on focus, visibility and a minute interval, with cleanup on unmount.
+
+Phase 6 rechecked normal-text pairings at 5.61:1 or better, input boundaries at 3.66:1, and focus outline against canvas at 7.26:1. DOM checks cover accessible-reference targets, real labels and cancellation focus restoration. These do not constitute actual browser keyboard, reader or viewport testing.

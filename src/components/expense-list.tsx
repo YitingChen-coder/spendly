@@ -8,7 +8,7 @@ import { WeeklyTotal } from "@/components/weekly-total";
 import { Button, buttonStyles } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
-const money = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
+import { formatMoney } from "@/lib/expense-summary";
 
 export function ExpenseList() {
   const { expenses, notice, reload } = useExpenses();
@@ -30,7 +30,7 @@ export function ExpenseList() {
               <Card>
                 <div className="flex flex-wrap items-start justify-between gap-4">
                   <div className="min-w-0 flex-1 basis-40"><h2 className="font-semibold wrap-anywhere">{expense.description}</h2><p className="mt-2 text-sm text-muted">{expense.category} · <time dateTime={expense.date}>{expense.date}</time></p></div>
-                  <p className="text-lg font-semibold tabular-nums">{money.format(expense.amountCents / 100)}</p>
+                  <p className="text-lg font-semibold tabular-nums">{formatMoney(expense.amountCents)}</p>
                 </div>
                 <div className="mt-5 flex flex-wrap items-start gap-3">
                   <Link href={`/expenses/${encodeURIComponent(expense.id)}/edit`} className={buttonStyles("secondary")} aria-label={`Edit ${expense.description}`}>Edit</Link>

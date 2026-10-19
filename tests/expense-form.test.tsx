@@ -7,6 +7,10 @@ import { ExpenseProvider } from "../src/components/expense-provider";
 import { ExpenseForm } from "../src/components/expense-form";
 import { ExpenseList } from "../src/components/expense-list";
 import { EditExpense } from "../src/components/edit-expense";
+import { WeeklyReview } from "../src/components/weekly-review";
+import { Overview } from "../src/components/overview";
+
+const RealDate = Date;
 
 const dom = new JSDOM("<!doctype html><html><body></body></html>", { url: "http://localhost/expenses/new" });
 for (const name of ["window", "document", "HTMLElement", "HTMLInputElement", "HTMLSelectElement", "Event", "MouseEvent", "FormData"]) {
@@ -29,7 +33,7 @@ function Workspace({ initialRoute = "/expenses/new" }: { initialRoute?: string }
     prefetch() {},
     bfcacheId: "test-workspace",
   };
-  return <AppRouterContext.Provider value={router}><ExpenseProvider>{route === "/expenses/new" ? <ExpenseForm /> : route.endsWith("/edit") ? <EditExpense id={route.split("/")[2]} /> : <ExpenseList />}</ExpenseProvider></AppRouterContext.Provider>;
+  return <AppRouterContext.Provider value={router}><ExpenseProvider>{route === "/" ? <Overview /> : route === "/summary" ? <WeeklyReview /> : route === "/expenses/new" ? <ExpenseForm /> : route.endsWith("/edit") ? <EditExpense id={route.split("/")[2]} /> : <ExpenseList />}</ExpenseProvider></AppRouterContext.Provider>;
 }
 
 async function mount(initialRoute = "/expenses/new") {
@@ -63,6 +67,7 @@ afterEach(async () => {
   root = undefined;
   document.body.replaceChildren();
   mock.restoreAll();
+  globalThis.Date = RealDate;
 });
 after(() => dom.window.close());
 
@@ -205,7 +210,7 @@ test("a missing edit id has a clear route back and does not modify storage", asy
 
 test("delete cancel preserves data; failed confirmation preserves it; a retry deletes the last record", async () => {
   seed(); await mount("/expenses"); const raw = dom.window.localStorage.getItem("spendly:data");
-  await click("Delete"); assert.equal(document.activeElement, button("Confirm delete")); await click("Cancel delete"); assert.equal(dom.window.localStorage.getItem("spendly:data"), raw);
+  await click("Delete"); assert.equal(document.activeElement, button("Confirm delete")); await click("Cancel delete"); assert.equal(document.activeElement, button("Delete")); assert.equal(dom.window.localStorage.getItem("spendly:data"), raw);
   await click("Delete"); const fail = mock.method(Object.getPrototypeOf(dom.window.localStorage), "setItem", () => { throw new Error("Quota"); });
   await click("Confirm delete"); assert.equal(dom.window.localStorage.getItem("spendly:data"), raw); assert.match(document.body.textContent!, /Could not save/);
   fail.mock.restore(); await click("Confirm delete"); assert.deepEqual(stored(), []); assert.match(document.body.textContent!, /starts with one purchase/);
@@ -215,7 +220,7 @@ test("delete cancel preserves data; failed confirmation preserves it; a retry de
 test("corrupt data remains unchanged until a separately confirmed successful reset", async () => {
   dom.window.localStorage.setItem("spendly:data", "{"); await mount("/expenses");
   assert.match(document.body.textContent!, /original data has been kept/); assert.equal(document.querySelector("form"), null); assert.ok(button("Download original data"));
-  await click("Reset saved data"); await click("Cancel reset"); assert.equal(dom.window.localStorage.getItem("spendly:data"), "{");
+  await click("Reset saved data"); await click("Cancel reset"); assert.equal(document.activeElement, button("Reset saved data")); assert.equal(dom.window.localStorage.getItem("spendly:data"), "{");
   await click("Reset saved data"); const fail = mock.method(Object.getPrototypeOf(dom.window.localStorage), "setItem", () => { throw new Error("Quota"); });
   await click("Confirm reset"); assert.equal(dom.window.localStorage.getItem("spendly:data"), "{");
   fail.mock.restore(); await click("Confirm reset"); assert.deepEqual(stored(), []); assert.match(document.body.textContent!, /starts with one purchase/);
@@ -249,4 +254,80 @@ test("denied storage during form reload preserves the draft and permits retry af
   assert.ok(document.querySelector("form"), "Denied reads must not unmount the form");
   assert.equal(input("description").value, "  Lunch  "); assert.equal(input("date").value, date);
   fail.mock.restore(); await click("Reload saved data"); await submit(); assert.equal(stored().length, 2);
+});
+
+function localClock(day = 18) {
+  let now = new RealDate(2026, 9, day, 12).getTime();
+  class ClockDate extends RealDate {
+    constructor(value?: string | number) { super(value === undefined ? now : value); }
+    static now() { return now; }
+  }
+  globalThis.Date = ClockDate as DateConstructor;
+  return { moveToDay(nextDay: number) { now = new RealDate(2026, 9, nextDay, 12).getTime(); } };
+}
+function seedWeek(items: Record<string, unknown>[]) {
+  dom.window.localStorage.setItem("spendly:data", JSON.stringify({ version: 1, expenses: items.map((item, index) => ({ ...saved, id: `week-${index}`, date: "2026-10-18", ...item })) }));
+}
+
+test("weekly summary shows category amounts, percentages, counts and the largest category", async () => {
+  localClock(); seedWeek([{ amountCents: 300, description: "Lunch" }, { amountCents: 100, category: "Transport", description: "Bus" }]); await mount("/summary");
+  assert.match(document.body.textContent!, /Food & Drink leads this week/); assert.match(document.body.textContent!, /75% of your recorded spending/); assert.match(document.body.textContent!, /2 expenses recorded this week/);
+  const list = document.querySelector('ol[aria-label="Weekly spending by category"]')!; assert.equal(list.children.length, 2);
+  assert.match(list.children[0].textContent!, /Food & Drink/); assert.match(list.children[0].textContent!, /\$3\.00/); assert.match(list.children[1].textContent!, /25%/);
+  assert.ok(list.querySelector('[aria-hidden="true"]')); assert.equal(document.querySelector('a[href="/expenses"]')?.textContent, "View all expenses");
+});
+
+test("tied categories are described as tied, and a tiny category gets an honest rounded label", async () => {
+  localClock(); seedWeek([{ amountCents: 100 }, { amountCents: 100, category: "Transport" }]); await mount("/summary");
+  assert.match(document.body.textContent!, /top categories are tied/); assert.match(document.body.textContent!, /Food & Drink, Transport each account for/);
+  await act(async () => root!.unmount()); root = undefined; document.body.replaceChildren();
+  seedWeek([{ amountCents: 99999999 }, { amountCents: 1, category: "Transport" }]); await mount("/summary");
+  assert.match(document.body.textContent!, /<0\.1%/); assert.match(document.body.textContent!, /\$0\.01/);
+});
+
+test("a week with only older history has no invented insight and retains a history link", async () => {
+  localClock(); seed(); await mount("/summary");
+  assert.match(document.body.textContent!, /No expenses recorded this week/); assert.match(document.body.textContent!, /earlier expenses are still in your history/);
+  assert.equal(document.querySelector('ol[aria-label="Weekly spending by category"]'), null);
+  assert.equal(document.querySelector('a[href="/expenses"]')?.textContent, "View earlier expenses"); assert.equal(stored().length, 1);
+});
+
+test("a completely empty weekly summary invites the first real expense", async () => {
+  localClock(); await mount("/summary");
+  assert.match(document.body.textContent!, /No expenses recorded this week/); assert.equal(document.querySelector('a[href="/expenses/new"]')?.textContent, "Add your first expense");
+  assert.equal(document.querySelector('ol[aria-label="Weekly spending by category"]'), null);
+});
+
+test("returning overview shows the three most recent expenses and keeps old history in a new week", async () => {
+  localClock(19); seedWeek([{ description: "One", date: "2026-10-18" }, { description: "Two", date: "2026-10-17" }, { description: "Three", date: "2026-10-16" }, { description: "Four", date: "2026-10-15" }]); await mount("/");
+  assert.match(document.body.textContent!, /Welcome back/); assert.match(document.body.textContent!, /No expenses recorded this week/);
+  const list = document.querySelector('ul[aria-label="Recent saved expenses"]')!; assert.equal(list.children.length, 3); assert.match(list.children[0].textContent!, /One/); assert.doesNotMatch(list.textContent!, /Four/);
+  assert.equal(document.querySelector('a[href="/summary"]')?.textContent, "Review this week"); assert.equal(stored().length, 4);
+});
+
+test("returning to an open tab after Monday updates the weekly period and categories", async () => {
+  const clock = localClock(); seedWeek([{ description: "Sunday lunch", amountCents: 1000 }, { description: "Monday bus", amountCents: 500, category: "Transport", date: "2026-10-19" }]); await mount("/summary");
+  assert.match(document.body.textContent!, /Food & Drink leads this week/); assert.match(document.body.textContent!, /2026-10-12/);
+  clock.moveToDay(19); await act(async () => { window.dispatchEvent(new dom.window.Event("focus")); });
+  assert.match(document.body.textContent!, /Transport leads this week/); assert.match(document.body.textContent!, /2026-10-19/);
+  assert.doesNotMatch(document.body.textContent!, /Food & Drink leads this week/); assert.equal(stored().length, 2);
+});
+
+test("summary, returning, delete/edit and recovery views have no dangling accessible references", async () => {
+  localClock(); seedWeek([{ description: "Lunch" }]);
+  function checkReferences() {
+    for (const element of document.querySelectorAll("[aria-labelledby], [aria-describedby]")) {
+      for (const attribute of ["aria-labelledby", "aria-describedby"]) {
+        for (const id of (element.getAttribute(attribute) ?? "").split(/\s+/).filter(Boolean)) assert.ok(document.getElementById(id), `Missing accessible target: ${id}`);
+      }
+    }
+    for (const control of document.querySelectorAll<HTMLInputElement | HTMLSelectElement>("input, select")) assert.ok(control.labels?.length, `Unlabeled field: ${control.name}`);
+  }
+  async function next(route: string) {
+    if (root) await act(async () => root!.unmount()); root = undefined; document.body.replaceChildren(); await mount(route); checkReferences();
+  }
+  await next("/summary"); await next("/"); await next("/expenses"); await click("Delete"); checkReferences();
+  await next("/expenses/week-0/edit");
+  if (root) await act(async () => root!.unmount()); root = undefined; document.body.replaceChildren();
+  dom.window.localStorage.setItem("spendly:data", "{"); await mount("/expenses"); await click("Reset saved data"); checkReferences();
 });

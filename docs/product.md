@@ -1,6 +1,6 @@
 # Spendly Product Brief
 
-Status: Phase 1 product design baseline. Phase 2 provides the shared foundation; Phase 3 adds first-visit presentation and entry links. Phase 4 adds form validation and temporary in-memory entries. Phase 5 adds durable localStorage, management, and immediate weekly totals. Category analysis remains planned.
+Status: Phase 1 product design baseline. Phase 2 provides the shared foundation; Phase 3 adds first-visit presentation and entry links. Phase 4 adds form validation and temporary in-memory entries. Phase 5 adds durable localStorage, management, and immediate weekly totals. Phase 6 adds weekly category analysis and the returning experience. Deployment and online usability checks remain planned.
 Date: October 18, 2026.
 
 ## Positioning
@@ -17,7 +17,7 @@ Daily motivation: capture a purchase while it is fresh. Weekly motivation: ident
 
 Record an expense -> immediately see the record and updated total -> return a few days later -> review history and this week's spending distribution.
 
-The user confirmed Next.js, Tailwind CSS, localStorage, three independent competitor-research subagents, meaningful phased commits, persistence edge-case testing, and an actual deployed agent usability check. Phases 1-4 were approved. Phase 5 is authorized for local persistence and expense management, and the user subsequently authorized Phase 6 as the next separate milestone. Completed milestone commits may be pushed to GitHub.
+The user confirmed Next.js, Tailwind CSS, localStorage, three independent competitor-research subagents, meaningful phased commits, persistence edge-case testing, and an actual deployed agent usability check. Phases 1-4 were approved. Phase 5 is authorized for local persistence and expense management, and the user subsequently authorized Phase 6 as a separate milestone. Phase 7 requires confirmation. Completed milestone commits may be pushed to GitHub.
 
 ## Minimum feature scope
 
