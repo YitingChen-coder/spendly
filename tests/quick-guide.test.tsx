@@ -70,3 +70,19 @@ test("blocked storage does not prevent opening or dismissing the guide", async (
   await click("Quick guide");
   assert.ok(document.querySelector('[aria-label="Quick start guide"]'));
 });
+
+test("starting the main task collapses the guide without moving focus or touching saved data", async () => {
+  dom.window.localStorage.setItem("spendly:data", "keep expenses");
+  await mount();
+  const main = document.createElement("main");
+  const input = document.createElement("input");
+  main.append(input);
+  document.body.append(main);
+  await act(async () => input.focus());
+  assert.equal(document.querySelector('[aria-label="Quick start guide"]') === null, true);
+  assert.equal(document.activeElement === input, true);
+  assert.equal(dom.window.localStorage.getItem("spendly:data"), "keep expenses");
+  assert.equal(dom.window.localStorage.getItem("spendly:quick-guide:v1"), null);
+  await click("Quick guide");
+  assert.ok(document.querySelector('[aria-label="Quick start guide"]'));
+});

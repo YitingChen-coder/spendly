@@ -211,6 +211,14 @@ Actual agent feedback: the initial add action was identifiable, error correction
 
 On October 19, 2026, the user supplied a screenshot of the GitHub repository README showing the Core user flow diagram rendered as connected nodes, arrows and labeled regions rather than source code or a loading state. The visible Returning Visit region and the beginning of First Visit match the documented flow. This confirms rendering in the user’s browser; it does not claim the remote agent overcame its asset-access blocker or that every off-screen node was visually inspected. The full three-flow Mermaid source remains embedded above and in flows.md.
 
+## Final accessibility audit: October 20, 2026
+
+A fresh source and actual Chromium audit of the local production build found one confirmed issue: on the 375px form, the open Quick Guide covered keyboard-focused fields and the submit button. The guide now collapses when focus enters the main task, without moving focus, changing expenses or persisting dismissal. Its launcher remains usable. A regression test failed before the fix and passed afterward; browser retesting verified unobscured control centers in the recorded keyboard sequence.
+
+Shared Button/Input semantics, actual HTML labels, required/error descriptions, one current navigation link per route, skip navigation, keyboard-only submission, visible focus and guide/delete focus return were checked in the documented scope. Computed WCAG text contrast passed for **348 sampled texts**, using **4.5:1 normal / 3:1 large** thresholds; minimum observed ratio was **5.61:1**. Native date-picker indicator focus was visually checked separately. No color changes were needed. The fixed launcher can still partially overlap underlying content at some scroll positions; zero overlap everywhere is not claimed.
+
+**Validation:** 132 tests passed (none failed/skipped), TypeScript, zero-warning ESLint and production build passed. [Full findings, steps, measured color pairs, scope limits and before/after screenshots](docs/verification/accessibility-2026-10-20/report.md). No screen-reader, cross-browser, forced-color or complete WCAG conformance claim is made. This change was tested locally; it has not been redeployed or verified on the hosted site.
+
 ## Submission links
 
 - GitHub: [YitingChen-coder/spendly](https://github.com/YitingChen-coder/spendly)

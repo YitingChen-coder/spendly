@@ -63,6 +63,19 @@ export function QuickGuide() {
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
+  useEffect(() => {
+    if (!open) return;
+    function onTaskFocus(event: FocusEvent) {
+      if (event.target instanceof HTMLElement && event.target.closest("main")) {
+        // Keep the non-modal guide from covering keyboard focus in the task.
+        setSessionDismissed(true);
+        setManualOpen(false);
+      }
+    }
+    document.addEventListener("focusin", onTaskFocus);
+    return () => document.removeEventListener("focusin", onTaskFocus);
+  }, [open]);
+
   return (
     <div className="fixed right-4 bottom-4 z-40 flex max-w-[calc(100vw-2rem)] flex-col items-end gap-3 sm:right-6 sm:bottom-6">
       {open && (

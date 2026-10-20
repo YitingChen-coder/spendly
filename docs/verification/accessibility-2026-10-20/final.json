@@ -1,0 +1,5803 @@
+{
+  "scope": "local production build, actual Chromium",
+  "routes": [
+    {
+      "route": "/",
+      "unlabeled": [],
+      "brokenRefs": [],
+      "current": [
+        "Overview"
+      ],
+      "lang": "en",
+      "h1": 1
+    },
+    {
+      "route": "/expenses/new",
+      "unlabeled": [],
+      "brokenRefs": [],
+      "current": [
+        "Add Expense"
+      ],
+      "lang": "en",
+      "h1": 1
+    },
+    {
+      "route": "/expenses",
+      "unlabeled": [],
+      "brokenRefs": [],
+      "current": [
+        "Expenses"
+      ],
+      "lang": "en",
+      "h1": 1
+    },
+    {
+      "route": "/summary",
+      "unlabeled": [],
+      "brokenRefs": [],
+      "current": [
+        "Weekly Summary"
+      ],
+      "lang": "en",
+      "h1": 1
+    },
+    {
+      "route": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit",
+      "unlabeled": [],
+      "brokenRefs": [],
+      "current": [
+        "Expenses"
+      ],
+      "lang": "en",
+      "h1": 1
+    },
+    {
+      "route": "/expenses/missing/edit",
+      "unlabeled": [],
+      "brokenRefs": [],
+      "current": [
+        "Expenses"
+      ],
+      "lang": "en",
+      "h1": 1
+    }
+  ],
+  "contrast": [
+    {
+      "text": "Skip to content",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "spendly",
+      "tag": "SPAN",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 14.907,
+      "required": 3,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": ".",
+      "tag": "SPAN",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 7.801,
+      "required": 3,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Overview",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Expenses",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Weekly Summary",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Add Expense",
+      "tag": "A",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.714,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Your personal spending space",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Local only",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Add Expense",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.255,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Keep the small things simple.",
+      "tag": "H1",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "30px",
+      "weight": "600",
+      "ratio": 13.863,
+      "required": 3,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Record an everyday purchase. All four fields are required.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Saved only in this browser. Your entries stay after refresh or reopening this si",
+      "tag": "P",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 12.829,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Check the highlighted fields and try again.",
+      "tag": "P",
+      "fg": "rgb(180, 35, 24)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.574,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Amount (USD)",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "For example, 12.50. Up to $999,999.99.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Enter an amount greater than 0 with up to 2 decimal places.",
+      "tag": "P",
+      "fg": "rgb(180, 35, 24)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.574,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "What was it for?",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "A short description, up to 100 characters.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Retained accessibility draft",
+      "tag": "INPUT",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Category",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Choose a spending category.",
+      "tag": "P",
+      "fg": "rgb(180, 35, 24)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.574,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Date",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Today or an earlier date.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "2026-10-20",
+      "tag": "INPUT",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Add expense",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Cancel",
+      "tag": "A",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Spendly \u00b7 Simple by design.",
+      "tag": "FOOTER",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Quick guide",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "validation"
+    },
+    {
+      "text": "Skip to content",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "spendly",
+      "tag": "SPAN",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 14.907,
+      "required": 3,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": ".",
+      "tag": "SPAN",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 7.801,
+      "required": 3,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Overview",
+      "tag": "A",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.714,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Expenses",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Weekly Summary",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Add Expense",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Your personal spending space",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Local only",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Overview",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.255,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Welcome back.",
+      "tag": "H1",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "30px",
+      "weight": "600",
+      "ratio": 13.863,
+      "required": 3,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Your purchases are right where you left them. Take a moment to see what adds up.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "This week",
+      "tag": "H2",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Recorded spending",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "$12.50",
+      "tag": "P",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "30px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 3,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "\u2013",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "2026-10-19",
+      "tag": "TIME",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "2026-10-25",
+      "tag": "TIME",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Add expense",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Review this week",
+      "tag": "A",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Recent expenses",
+      "tag": "H2",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Retained accessibility draft",
+      "tag": "P",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Food & Drink \u00b7",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "2026-10-20",
+      "tag": "TIME",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "$12.50",
+      "tag": "SPAN",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "View all expenses",
+      "tag": "A",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Saved in this browser only. Records do not sync across devices. Clearing site da",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Spendly \u00b7 Simple by design.",
+      "tag": "FOOTER",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "QUICK START \u00b7 1 OF 3",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "\u00d7",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Record your first expense",
+      "tag": "H2",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Choose Add Expense. Enter the amount, a short description, category and date, th",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Next",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Skip",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Quick guide",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/"
+    },
+    {
+      "text": "Skip to content",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "spendly",
+      "tag": "SPAN",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 14.907,
+      "required": 3,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": ".",
+      "tag": "SPAN",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 7.801,
+      "required": 3,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Overview",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Expenses",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Weekly Summary",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Add Expense",
+      "tag": "A",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.714,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Your personal spending space",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Local only",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Add Expense",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.255,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Keep the small things simple.",
+      "tag": "H1",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "30px",
+      "weight": "600",
+      "ratio": 13.863,
+      "required": 3,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Record an everyday purchase. All four fields are required.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Saved only in this browser. Your entries stay after refresh or reopening this si",
+      "tag": "P",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 12.829,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Amount (USD)",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "For example, 12.50. Up to $999,999.99.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "What was it for?",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "A short description, up to 100 characters.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Category",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Date",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Today or an earlier date.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "2026-10-20",
+      "tag": "INPUT",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Add expense",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Cancel",
+      "tag": "A",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Spendly \u00b7 Simple by design.",
+      "tag": "FOOTER",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "QUICK START \u00b7 1 OF 3",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "\u00d7",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Record your first expense",
+      "tag": "H2",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Choose Add Expense. Enter the amount, a short description, category and date, th",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Next",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Skip",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Quick guide",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/new"
+    },
+    {
+      "text": "Skip to content",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "spendly",
+      "tag": "SPAN",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 14.907,
+      "required": 3,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": ".",
+      "tag": "SPAN",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 7.801,
+      "required": 3,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Overview",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Expenses",
+      "tag": "A",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.714,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Weekly Summary",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Add Expense",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Your personal spending space",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Local only",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Expenses",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.255,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Your purchases, together.",
+      "tag": "H1",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "30px",
+      "weight": "600",
+      "ratio": 13.863,
+      "required": 3,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Saved only in this browser. Clearing site data removes your records.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "This week",
+      "tag": "H2",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Recorded spending",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "$12.50",
+      "tag": "P",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "30px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 3,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "\u2013",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "2026-10-19",
+      "tag": "TIME",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "2026-10-25",
+      "tag": "TIME",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Retained accessibility draft",
+      "tag": "H2",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Food & Drink \u00b7",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "2026-10-20",
+      "tag": "TIME",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "$12.50",
+      "tag": "P",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "18px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Edit",
+      "tag": "A",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Delete",
+      "tag": "BUTTON",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Add another expense",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Reload saved data",
+      "tag": "BUTTON",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Spendly \u00b7 Simple by design.",
+      "tag": "FOOTER",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "QUICK START \u00b7 1 OF 3",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "\u00d7",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Record your first expense",
+      "tag": "H2",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Choose Add Expense. Enter the amount, a short description, category and date, th",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Next",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Skip",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Quick guide",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses"
+    },
+    {
+      "text": "Skip to content",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "spendly",
+      "tag": "SPAN",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 14.907,
+      "required": 3,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": ".",
+      "tag": "SPAN",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 7.801,
+      "required": 3,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Overview",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Expenses",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Weekly Summary",
+      "tag": "A",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.714,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Add Expense",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Your personal spending space",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Local only",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Weekly Summary",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.255,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "See where your money went.",
+      "tag": "H1",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "30px",
+      "weight": "600",
+      "ratio": 13.863,
+      "required": 3,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Your recorded spending, grouped by category. A week runs Monday through Sunday.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "This week",
+      "tag": "H2",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Recorded spending",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "$12.50",
+      "tag": "P",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "30px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 3,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "\u2013",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "2026-10-19",
+      "tag": "TIME",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "2026-10-25",
+      "tag": "TIME",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Food & Drink leads this week.",
+      "tag": "H2",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "100% of your recorded spending went to Food & Drink.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "1 expense recorded this week.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Where it went",
+      "tag": "H2",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Food & Drink",
+      "tag": "H3",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "$12.50",
+      "tag": "SPAN",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "100% \u00b7 1 expense",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Percentages are rounded and may not add up to exactly 100%. Only recorded expens",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Add expense",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "View all expenses",
+      "tag": "A",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Spendly \u00b7 Simple by design.",
+      "tag": "FOOTER",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "QUICK START \u00b7 1 OF 3",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "\u00d7",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Record your first expense",
+      "tag": "H2",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Choose Add Expense. Enter the amount, a short description, category and date, th",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Next",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Skip",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Quick guide",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/summary"
+    },
+    {
+      "text": "Skip to content",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "spendly",
+      "tag": "SPAN",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 14.907,
+      "required": 3,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": ".",
+      "tag": "SPAN",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 7.801,
+      "required": 3,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Overview",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Expenses",
+      "tag": "A",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.714,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Weekly Summary",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Add Expense",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Your personal spending space",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Local only",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Edit expense",
+      "tag": "H1",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "30px",
+      "weight": "600",
+      "ratio": 13.863,
+      "required": 3,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Saved only in this browser. Your entries stay after refresh or reopening this si",
+      "tag": "P",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 12.829,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Amount (USD)",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "For example, 12.50. Up to $999,999.99.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "12.50",
+      "tag": "INPUT",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "What was it for?",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "A short description, up to 100 characters.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Retained accessibility draft",
+      "tag": "INPUT",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Category",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Food & Drink",
+      "tag": "SELECT",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Date",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Today or an earlier date.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "2026-10-20",
+      "tag": "INPUT",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Save changes",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Cancel",
+      "tag": "A",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Spendly \u00b7 Simple by design.",
+      "tag": "FOOTER",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "QUICK START \u00b7 1 OF 3",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "\u00d7",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Record your first expense",
+      "tag": "H2",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Choose Add Expense. Enter the amount, a short description, category and date, th",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Next",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Skip",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Quick guide",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/ad167c90-5cf5-4582-9c2c-158c9985e7de/edit"
+    },
+    {
+      "text": "Skip to content",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "spendly",
+      "tag": "SPAN",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 14.907,
+      "required": 3,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": ".",
+      "tag": "SPAN",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 7.801,
+      "required": 3,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "Overview",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "Expenses",
+      "tag": "A",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.714,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "Weekly Summary",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "Add Expense",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "Your personal spending space",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "Local only",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "Expense not found",
+      "tag": "H1",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "30px",
+      "weight": "600",
+      "ratio": 13.863,
+      "required": 3,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "This expense may have been deleted. Open your records to choose another purchase",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "Back to expenses",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "Spendly \u00b7 Simple by design.",
+      "tag": "FOOTER",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "QUICK START \u00b7 1 OF 3",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "\u00d7",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "Record your first expense",
+      "tag": "H2",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "Choose Add Expense. Enter the amount, a short description, category and date, th",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "Next",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "Skip",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "Quick guide",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "/expenses/missing/edit"
+    },
+    {
+      "text": "Skip to content",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "spendly",
+      "tag": "SPAN",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 14.907,
+      "required": 3,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": ".",
+      "tag": "SPAN",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 7.801,
+      "required": 3,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Overview",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Expenses",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Weekly Summary",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Add Expense",
+      "tag": "A",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.714,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Your personal spending space",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Local only",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Add Expense",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.255,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Keep the small things simple.",
+      "tag": "H1",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "30px",
+      "weight": "600",
+      "ratio": 13.863,
+      "required": 3,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Record an everyday purchase. All four fields are required.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Saved only in this browser. Your entries stay after refresh or reopening this si",
+      "tag": "P",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 12.829,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Amount (USD)",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "For example, 12.50. Up to $999,999.99.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "What was it for?",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "A short description, up to 100 characters.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Category",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Date",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Today or an earlier date.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "2026-10-20",
+      "tag": "INPUT",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Add expense",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Cancel",
+      "tag": "A",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Spendly \u00b7 Simple by design.",
+      "tag": "FOOTER",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "QUICK START \u00b7 1 OF 3",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "\u00d7",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Record your first expense",
+      "tag": "H2",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Choose Add Expense. Enter the amount, a short description, category and date, th",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Next",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Skip",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Quick guide",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "guide"
+    },
+    {
+      "text": "Skip to content",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "spendly",
+      "tag": "SPAN",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 14.907,
+      "required": 3,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": ".",
+      "tag": "SPAN",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 7.801,
+      "required": 3,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Overview",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Expenses",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Weekly Summary",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Add Expense",
+      "tag": "A",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.714,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Your personal spending space",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Local only",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Add Expense",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.255,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Keep the small things simple.",
+      "tag": "H1",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "30px",
+      "weight": "600",
+      "ratio": 13.863,
+      "required": 3,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Record an everyday purchase. All four fields are required.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Saved only in this browser. Your entries stay after refresh or reopening this si",
+      "tag": "P",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 12.829,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Amount (USD)",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "For example, 12.50. Up to $999,999.99.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "What was it for?",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "A short description, up to 100 characters.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Category",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Date",
+      "tag": "LABEL",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "(required)",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Today or an earlier date.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "2026-10-20",
+      "tag": "INPUT",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Add expense",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Cancel",
+      "tag": "A",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Spendly \u00b7 Simple by design.",
+      "tag": "FOOTER",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "QUICK START \u00b7 1 OF 3",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "\u00d7",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Record your first expense",
+      "tag": "H2",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "20px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Choose Add Expense. Enter the amount, a short description, category and date, th",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Next",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        25,
+        70,
+        50
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 10.695,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Skip",
+      "tag": "BUTTON",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Quick guide",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "primary-hover"
+    },
+    {
+      "text": "Skip to content",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "spendly",
+      "tag": "SPAN",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 14.907,
+      "required": 3,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": ".",
+      "tag": "SPAN",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 7.801,
+      "required": 3,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Overview",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Expenses",
+      "tag": "A",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.714,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Weekly Summary",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Add Expense",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Your personal spending space",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Local only",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Expenses",
+      "tag": "P",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "600",
+      "ratio": 7.255,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Your purchases, together.",
+      "tag": "H1",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "30px",
+      "weight": "600",
+      "ratio": 13.863,
+      "required": 3,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Saved only in this browser. Clearing site data removes your records.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "This week",
+      "tag": "H2",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Recorded spending",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "$12.50",
+      "tag": "P",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "30px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 3,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "\u2013",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "2026-10-19",
+      "tag": "TIME",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "2026-10-25",
+      "tag": "TIME",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Retained accessibility draft",
+      "tag": "H2",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Food & Drink \u00b7",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "2026-10-20",
+      "tag": "TIME",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "$12.50",
+      "tag": "P",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "18px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Edit",
+      "tag": "A",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Delete",
+      "tag": "BUTTON",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Delete \u201cRetained accessibility draft\u201d?",
+      "tag": "P",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "This removes the saved expense from this browser.",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Confirm delete",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Cancel delete",
+      "tag": "BUTTON",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Add another expense",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Reload saved data",
+      "tag": "BUTTON",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Spendly \u00b7 Simple by design.",
+      "tag": "FOOTER",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Quick guide",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "delete"
+    },
+    {
+      "text": "Skip to content",
+      "tag": "A",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "16px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": "spendly",
+      "tag": "SPAN",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 14.907,
+      "required": 3,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": ".",
+      "tag": "SPAN",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "24px",
+      "weight": "700",
+      "ratio": 7.801,
+      "required": 3,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": "Overview",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": "Expenses",
+      "tag": "A",
+      "fg": "rgb(36, 92, 69)",
+      "bg": [
+        232,
+        240,
+        233
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.714,
+      "required": 4.5,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": "Weekly Summary",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": "Add Expense",
+      "tag": "A",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": "Your personal spending space",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "14px",
+      "weight": "500",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": "Local only",
+      "tag": "SPAN",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "12px",
+      "weight": "500",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": "Let\u2019s check your saved data.",
+      "tag": "H1",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "30px",
+      "weight": "600",
+      "ratio": 13.863,
+      "required": 3,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": "Your saved data could not be read safely. The original data has been kept.",
+      "tag": "P",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "16px",
+      "weight": "400",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": "No saved expenses have been replaced. Retry after checking this browser\u2019s storag",
+      "tag": "P",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "400",
+      "ratio": 6.033,
+      "required": 4.5,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": "Retry loading",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": "Download original data",
+      "tag": "BUTTON",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": "Reset saved data",
+      "tag": "BUTTON",
+      "fg": "rgb(23, 43, 37)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 14.907,
+      "required": 4.5,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": "Spendly \u00b7 Simple by design.",
+      "tag": "FOOTER",
+      "fg": "rgb(88, 102, 95)",
+      "bg": [
+        246,
+        247,
+        244
+      ],
+      "size": "12px",
+      "weight": "400",
+      "ratio": 5.611,
+      "required": 4.5,
+      "pass": true,
+      "state": "recovery"
+    },
+    {
+      "text": "Quick guide",
+      "tag": "BUTTON",
+      "fg": "rgb(255, 255, 255)",
+      "bg": [
+        36,
+        92,
+        69
+      ],
+      "size": "14px",
+      "weight": "600",
+      "ratio": 7.801,
+      "required": 4.5,
+      "pass": true,
+      "state": "recovery"
+    }
+  ],
+  "browser": "154.0.8037.57",
+  "keyboard_focus": [
+    {
+      "tag": "INPUT",
+      "id": "amount",
+      "text": "",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    },
+    {
+      "tag": "INPUT",
+      "id": "description",
+      "text": "",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    },
+    {
+      "tag": "SELECT",
+      "id": "category",
+      "text": "Choose a category\nFood & Drink\nGroceries\nTran",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    },
+    {
+      "tag": "INPUT",
+      "id": "date",
+      "text": "",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    },
+    {
+      "tag": "INPUT",
+      "id": "date",
+      "text": "",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    },
+    {
+      "tag": "INPUT",
+      "id": "date",
+      "text": "",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    },
+    {
+      "tag": "INPUT",
+      "id": "date",
+      "text": "",
+      "outline": "none",
+      "width": "3px",
+      "color": "rgb(23, 43, 37)",
+      "occluded": false
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "text": "Add expense",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Cancel",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "text": "Quick guide",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    },
+    {
+      "tag": "BODY",
+      "id": "",
+      "text": "Skip to content\nspendly.\nOverview\nExpenses\nWe",
+      "outline": "none",
+      "width": "3px",
+      "color": "rgb(23, 43, 37)",
+      "occluded": false
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Skip to content",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "spendly.",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Overview",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Expenses",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Weekly Summary",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Add Expense",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    },
+    {
+      "tag": "INPUT",
+      "id": "amount",
+      "text": "",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "occluded": false
+    }
+  ],
+  "contrast_failures": [],
+  "contrast_min": 5.611,
+  "text_samples": 348
+}

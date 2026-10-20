@@ -1,0 +1,460 @@
+{
+  "browser": "154.0.8037.57",
+  "focus": [
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Skip to content",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "rect": {
+        "x": 16,
+        "y": 16,
+        "w": 155.5625,
+        "h": 48
+      },
+      "occluded": false,
+      "cover": "<a href=\"#main-content\" class=\"fixed top-4 left-4 z-50 -translate-y-24 rounded-control bg-brand px-5 py-3 font-semibold text-white focus:tra"
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "spendly.",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "rect": {
+        "x": 16,
+        "y": 20,
+        "w": 142.796875,
+        "h": 40
+      },
+      "occluded": false,
+      "cover": "<span class=\"text-2xl font-bold tracking-tight\">spendly<span class=\"text-brand\">.</span></span>"
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Overview",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(88, 102, 95)",
+      "rect": {
+        "x": 16,
+        "y": 80,
+        "w": 110.359375,
+        "h": 44
+      },
+      "occluded": false,
+      "cover": "<a class=\"inline-flex min-h-11 items-center gap-2 rounded-control px-3 py-2.5 text-sm font-medium transition-colors motion-reduce:transition"
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Expenses",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(88, 102, 95)",
+      "rect": {
+        "x": 130.359375,
+        "y": 80,
+        "w": 113.484375,
+        "h": 44
+      },
+      "occluded": false,
+      "cover": "<a class=\"inline-flex min-h-11 items-center gap-2 rounded-control px-3 py-2.5 text-sm font-medium transition-colors motion-reduce:transition"
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Weekly Summary",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(88, 102, 95)",
+      "rect": {
+        "x": 16,
+        "y": 128,
+        "w": 161.4375,
+        "h": 44
+      },
+      "occluded": false,
+      "cover": "<a class=\"inline-flex min-h-11 items-center gap-2 rounded-control px-3 py-2.5 text-sm font-medium transition-colors motion-reduce:transition"
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Add Expense",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "rect": {
+        "x": 181.4375,
+        "y": 128,
+        "w": 135.296875,
+        "h": 44
+      },
+      "occluded": false,
+      "cover": "<a aria-current=\"page\" class=\"inline-flex min-h-11 items-center gap-2 rounded-control px-3 py-2.5 text-sm font-medium transition-colors moti"
+    },
+    {
+      "tag": "INPUT",
+      "id": "amount",
+      "text": "",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "rect": {
+        "x": 45,
+        "y": 722,
+        "w": 285,
+        "h": 46
+      },
+      "occluded": true,
+      "cover": "<div class=\"fixed right-4 bottom-4 z-40 flex max-w-[calc(100vw-2rem)] flex-col items-end gap-3 sm:right-6 sm:bottom-6\"><section id=\"quick-gu"
+    },
+    {
+      "tag": "INPUT",
+      "id": "description",
+      "text": "",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "rect": {
+        "x": 45,
+        "y": 383,
+        "w": 285,
+        "h": 46
+      },
+      "occluded": false,
+      "cover": "<input class=\"min-h-11 w-full rounded-control border border-control bg-surface px-3 py-2.5 text-base text-ink placeholder:text-muted disable"
+    },
+    {
+      "tag": "SELECT",
+      "id": "category",
+      "text": "Choose a category\nFood & Drink\nGroceries\nTransport\nShopping\n",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "rect": {
+        "x": 45,
+        "y": 481,
+        "w": 285,
+        "h": 44
+      },
+      "occluded": true,
+      "cover": "<p class=\"text-xs font-semibold tracking-wide text-brand\">QUICK START \u00b7 1 OF 3</p>"
+    },
+    {
+      "tag": "INPUT",
+      "id": "date",
+      "text": "",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "rect": {
+        "x": 45,
+        "y": 605,
+        "w": 285,
+        "h": 46
+      },
+      "occluded": true,
+      "cover": "<p class=\"mt-3 text-sm leading-6 text-muted\">Choose Add Expense. Enter the amount, a short description, category and date, then save. No acc"
+    },
+    {
+      "tag": "INPUT",
+      "id": "date",
+      "text": "",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "rect": {
+        "x": 45,
+        "y": 605,
+        "w": 285,
+        "h": 46
+      },
+      "occluded": true,
+      "cover": "<p class=\"mt-3 text-sm leading-6 text-muted\">Choose Add Expense. Enter the amount, a short description, category and date, then save. No acc"
+    },
+    {
+      "tag": "INPUT",
+      "id": "date",
+      "text": "",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "rect": {
+        "x": 45,
+        "y": 605,
+        "w": 285,
+        "h": 46
+      },
+      "occluded": true,
+      "cover": "<p class=\"mt-3 text-sm leading-6 text-muted\">Choose Add Expense. Enter the amount, a short description, category and date, then save. No acc"
+    },
+    {
+      "tag": "INPUT",
+      "id": "date",
+      "text": "",
+      "outline": "none",
+      "width": "3px",
+      "color": "rgb(23, 43, 37)",
+      "rect": {
+        "x": 45,
+        "y": 605,
+        "w": 285,
+        "h": 46
+      },
+      "occluded": true,
+      "cover": "<p class=\"mt-3 text-sm leading-6 text-muted\">Choose Add Expense. Enter the amount, a short description, category and date, then save. No acc"
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "text": "Add expense",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(255, 255, 255)",
+      "rect": {
+        "x": 45,
+        "y": 700,
+        "w": 285,
+        "h": 44
+      },
+      "occluded": true,
+      "cover": "<section id=\"quick-guide-panel\" aria-label=\"Quick start guide\" class=\"max-h-[calc(100dvh-7rem)] w-80 max-w-full overflow-y-auto rounded-card"
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Cancel",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(23, 43, 37)",
+      "rect": {
+        "x": 45,
+        "y": 756,
+        "w": 285,
+        "h": 44
+      },
+      "occluded": true,
+      "cover": "<div class=\"fixed right-4 bottom-4 z-40 flex max-w-[calc(100vw-2rem)] flex-col items-end gap-3 sm:right-6 sm:bottom-6\"><section id=\"quick-gu"
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "text": "\u00d7",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "rect": {
+        "x": 294,
+        "y": 487,
+        "w": 44,
+        "h": 44
+      },
+      "occluded": false,
+      "cover": "<button type=\"button\" aria-label=\"Close guide\" class=\"flex min-h-11 min-w-11 items-center justify-center rounded-control text-xl text-muted\""
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "text": "Next",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(255, 255, 255)",
+      "rect": {
+        "x": 60,
+        "y": 675,
+        "w": 64.359375,
+        "h": 44
+      },
+      "occluded": false,
+      "cover": "<button type=\"button\" class=\"inline-flex min-h-11 items-center justify-center gap-2 rounded-control border px-4 py-2.5 text-sm font-semibold"
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "text": "Skip",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "rect": {
+        "x": 132.359375,
+        "y": 675,
+        "w": 53.578125,
+        "h": 44
+      },
+      "occluded": false,
+      "cover": "<button type=\"button\" class=\"min-h-11 rounded-control px-3 text-sm font-semibold text-muted\">Skip</button>"
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "text": "Quick guide",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(255, 255, 255)",
+      "rect": {
+        "x": 244.875,
+        "y": 752,
+        "w": 114.125,
+        "h": 44
+      },
+      "occluded": false,
+      "cover": "<button type=\"button\" class=\"inline-flex min-h-11 items-center justify-center gap-2 rounded-control border px-4 py-2.5 text-sm font-semibold"
+    },
+    {
+      "tag": "BODY",
+      "id": "",
+      "text": "Skip to content\nspendly.\nOverview\nExpenses\nWeekly Summary\nAd",
+      "outline": "none",
+      "width": "3px",
+      "color": "rgb(23, 43, 37)",
+      "rect": {
+        "x": 0,
+        "y": -465,
+        "w": 375,
+        "h": 1478
+      },
+      "occluded": false,
+      "cover": "<input class=\"min-h-11 w-full rounded-control border border-control bg-surface px-3 py-2.5 text-base text-ink placeholder:text-muted disable"
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Skip to content",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "rect": {
+        "x": 16,
+        "y": 16,
+        "w": 155.5625,
+        "h": 48
+      },
+      "occluded": false,
+      "cover": "<a href=\"#main-content\" class=\"fixed top-4 left-4 z-50 -translate-y-24 rounded-control bg-brand px-5 py-3 font-semibold text-white focus:tra"
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "spendly.",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(36, 92, 69)",
+      "rect": {
+        "x": 16,
+        "y": 20,
+        "w": 142.796875,
+        "h": 40
+      },
+      "occluded": false,
+      "cover": "<span class=\"text-2xl font-bold tracking-tight\">spendly<span class=\"text-brand\">.</span></span>"
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Overview",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(88, 102, 95)",
+      "rect": {
+        "x": 16,
+        "y": 80,
+        "w": 110.359375,
+        "h": 44
+      },
+      "occluded": false,
+      "cover": "<a class=\"inline-flex min-h-11 items-center gap-2 rounded-control px-3 py-2.5 text-sm font-medium transition-colors motion-reduce:transition"
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "text": "Expenses",
+      "outline": "solid",
+      "width": "2px",
+      "color": "rgb(88, 102, 95)",
+      "rect": {
+        "x": 130.359375,
+        "y": 80,
+        "w": 113.484375,
+        "h": 44
+      },
+      "occluded": false,
+      "cover": "<a class=\"inline-flex min-h-11 items-center gap-2 rounded-control px-3 py-2.5 text-sm font-medium transition-colors motion-reduce:transition"
+    }
+  ],
+  "routes": [
+    {
+      "route": "/",
+      "labels": [],
+      "current": [
+        "Overview"
+      ],
+      "duplicate_ids": []
+    },
+    {
+      "route": "/expenses/new",
+      "labels": [
+        {
+          "id": "amount",
+          "labels": [
+            "Amount (USD)(required)"
+          ],
+          "required": true
+        },
+        {
+          "id": "description",
+          "labels": [
+            "What was it for?(required)"
+          ],
+          "required": true
+        },
+        {
+          "id": "category",
+          "labels": [
+            "Category(required)"
+          ],
+          "required": true
+        },
+        {
+          "id": "date",
+          "labels": [
+            "Date(required)"
+          ],
+          "required": true
+        }
+      ],
+      "current": [
+        "Add Expense"
+      ],
+      "duplicate_ids": []
+    },
+    {
+      "route": "/expenses",
+      "labels": [],
+      "current": [
+        "Expenses"
+      ],
+      "duplicate_ids": []
+    },
+    {
+      "route": "/summary",
+      "labels": [],
+      "current": [
+        "Weekly Summary"
+      ],
+      "duplicate_ids": []
+    },
+    {
+      "route": "/expenses/missing/edit",
+      "labels": [],
+      "current": [
+        "Expenses"
+      ],
+      "duplicate_ids": []
+    }
+  ]
+}
